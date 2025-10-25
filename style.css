@@ -1,80 +1,138 @@
-/* Define your auspicious ASADIA colors */
+/* ================================
+   ASADIA BRAND — PREMIUM STYLING
+   ================================ */
+
+/* 🌈 Brand Colors (Symbolic) */
 :root {
-    --cosmic-black: #1A1A1A; /* Authority and Luxury (Number 8) */
-    --mars-red: #E90000;     /* Action and Leadership (Aries/Mars) */
-    --pure-white: #FFFFFF;   /* Integrity (Life Path 9) */
+    --cosmic-black: #0F0F0F;  /* Deep authority black */
+    --mars-red: #E90000;      /* Aries power red */
+    --pure-white: #FFFFFF;    /* Integrity white */
+    --shadow-red: rgba(233, 0, 0, 0.6);
 }
 
-/* Base Body Styles */
+/* 🌐 Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif; /* High-end, sharp font */
-    background-color: var(--cosmic-black); /* The main background color */
-    color: var(--pure-white); /* All text is white by default */
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cosmic-black);
+    color: var(--pure-white);
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all content for a clean, focused look */
+    text-align: center;
+    line-height: 1.6;
 }
 
-/* Header and Logo/Brand Name Styling */
+/* 🧱 Header Section */
 header {
-    padding: 30px 20px;
-    background-color: #242424; /* Slightly lighter black for separation */
-    border-bottom: 5px solid var(--mars-red); /* Strong Mars Red dividing line */
+    background: linear-gradient(180deg, #1A1A1A 0%, #242424 100%);
+    border-bottom: 5px solid var(--mars-red);
+    padding: 40px 20px;
+    box-shadow: 0 0 25px rgba(233, 0, 0, 0.2);
 }
 
+/* 🔥 Logo Styling */
+.logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    filter: drop-shadow(0 0 10px var(--shadow-red));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(233, 0, 0, 0.9));
+}
+
+/* 🏷️ Brand Title */
 header h1 {
     font-size: 3em;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
     color: var(--pure-white);
-    margin-bottom: 5px;
+    text-shadow: 0 0 10px var(--shadow-red);
 }
 
+/* ✨ Tagline */
 .tagline {
-    color: var(--mars-red); /* Mars Red for the powerful tagline */
+    color: var(--mars-red);
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
-/* Navigation Menu */
+/* 📜 Navigation */
 nav {
-    background-color: var(--cosmic-black);
+    background-color: #151515;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
     padding: 15px 0;
+    box-shadow: 0 0 15px rgba(233, 0, 0, 0.2);
 }
 
 nav a {
     color: var(--pure-white);
     text-decoration: none;
     margin: 0 20px;
-    font-weight: 400;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--mars-red); /* Links glow Mars Red on hover */
+    color: var(--mars-red);
+    text-shadow: 0 0 8px rgba(233, 0, 0, 0.8);
 }
 
-/* Section Styling */
+/* 📦 Section Styling */
 section {
     padding: 60px 20px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #222;
 }
 
 section h2 {
     font-size: 2.5em;
-    color: var(--mars-red); /* All main headings are Mars Red */
-    margin-bottom: 20px;
+    color: var(--mars-red);
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-/* Specific Accent Text */
+section p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    color: var(--pure-white);
+}
+
+/* 📞 Accent Text (Contacts etc.) */
 .accent-text {
-    color: var(--mars-red); /* Used for your primary phone number */
+    color: var(--mars-red);
     font-weight: 700;
 }
 
-/* Footer Styling */
+/* 🧭 Footer */
 footer {
-    padding: 20px;
-    font-size: 0.8em;
-    color: #666; /* Subtle gray for copyright */
+    background-color: #151515;
+    color: #777;
+    padding: 25px 10px;
+    font-size: 0.85em;
+    border-top: 1px solid #222;
 }
+
+footer p {
+    margin: 0;
+}
+
+/* ✨ Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2em;
+        letter-spacing: 3px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size

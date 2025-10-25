@@ -1,138 +1,141 @@
-/* ================================
-   ASADIA BRAND — PREMIUM STYLING
-   ================================ */
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 
-/* 🌈 Brand Colors (Symbolic) */
 :root {
-    --cosmic-black: #0F0F0F;  /* Deep authority black */
-    --mars-red: #E90000;      /* Aries power red */
-    --pure-white: #FFFFFF;    /* Integrity white */
-    --shadow-red: rgba(233, 0, 0, 0.6);
+  --mars-red: #ff3131;
+  --dark-bg: #111;
+  --accent-yellow: #ffcc00;
 }
 
-/* 🌐 Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--cosmic-black);
-    color: var(--pure-white);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 1.6;
+  background-color: var(--dark-bg);
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 1.6;
 }
 
-/* 🧱 Header Section */
+/* ===== HEADER ===== */
 header {
-    background: linear-gradient(180deg, #1A1A1A 0%, #242424 100%);
-    border-bottom: 5px solid var(--mars-red);
-    padding: 40px 20px;
-    box-shadow: 0 0 25px rgba(233, 0, 0, 0.2);
+  padding: 40px 20px 10px;
 }
 
-/* 🔥 Logo Styling */
 .logo {
-    width: 140px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px auto;
-    filter: drop-shadow(0 0 10px var(--shadow-red));
-    transition: transform 0.3s ease, filter 0.3s ease;
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 6px rgba(255, 49, 49, 0.5));
+  transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 15px rgba(233, 0, 0, 0.9));
+  transform: scale(1.05);
 }
 
-/* 🏷️ Brand Title */
 header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    letter-spacing: 6px;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    color: var(--pure-white);
-    text-shadow: 0 0 10px var(--shadow-red);
+  font-size: 2.6rem;
+  letter-spacing: 3px;
 }
 
-/* ✨ Tagline */
 .tagline {
-    color: var(--mars-red);
-    font-style: italic;
-    font-size: 1.2em;
+  font-style: italic;
+  color: #bbb;
 }
 
-/* 📜 Navigation */
+/* ===== NAVIGATION ===== */
 nav {
-    background-color: #151515;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    padding: 15px 0;
-    box-shadow: 0 0 15px rgba(233, 0, 0, 0.2);
+  background: #1c1c1c;
+  padding: 15px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 nav a {
-    color: var(--pure-white);
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: 500;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--mars-red);
-    text-shadow: 0 0 8px rgba(233, 0, 0, 0.8);
+  color: var(--accent-yellow);
 }
 
-/* 📦 Section Styling */
-section {
-    padding: 60px 20px;
-    border-bottom: 1px solid #222;
+/* ===== MISSION SECTION ===== */
+.mission {
+  padding: 80px 20px;
+  background: #141414;
 }
 
-section h2 {
-    font-size: 2.5em;
-    color: var(--mars-red);
-    margin-bottom: 15px;
-    text-transform: uppercase;
+.mission h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--accent-yellow);
 }
 
-section p {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    color: var(--pure-white);
+/* ===== PRODUCTS SECTION ===== */
+#products {
+  background: #111;
+  padding: 80px 20px;
+}
+
+#products h2 {
+  color: var(--accent-yellow);
+  margin-bottom: 20px;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  padding: 70px 20px;
+  background: #141414;
+}
+
+#contact h2 {
+  color: var(--accent-yellow);
+  margin-bottom: 20px;
 }
 
 /* 📞 Accent Text (Contacts etc.) */
 .accent-text {
-    color: var(--mars-red);
-    font-weight: 700;
+  color: var(--mars-red);
+  font-weight: 700;
 }
 
 /* 🧭 Footer */
 footer {
-    background-color: #151515;
-    color: #777;
-    padding: 25px 10px;
-    font-size: 0.85em;
-    border-top: 1px solid #222;
+  background-color: #151515;
+  color: #777;
+  padding: 25px 10px;
+  font-size: 0.85em;
+  border-top: 1px solid #222;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ✨ Responsive Design */
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 2.2em;
-        letter-spacing: 3px;
-    }
+  header h1 {
+    font-size: 2.2em;
+    letter-spacing: 3px;
+  }
 
-    section h2 {
-        font-size: 1.8em;
-    }
+  section h2 {
+    font-size: 1.8em;
+  }
 
-    nav a {
-        margin: 0 10px;
-        font-size
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9em;
+  }
+
+  .mission, #products, #contact {
+    padding: 50px 15px;
+  }
+}

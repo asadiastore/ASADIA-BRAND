@@ -87,7 +87,7 @@ nav a:hover {
 
 /* 🪶 SECTIONS */
 section {
-  padding: 35px 20px;
+  padding: 40px 15px;
   border-bottom: 1px solid #222;
   background: linear-gradient(180deg, #0f0f0f 0%, #1b1b1b 100%);
 }
@@ -95,7 +95,7 @@ section {
 section h2 {
   font-size: 2.6em;
   color: var(--mars-red);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -140,7 +140,7 @@ section p {
   background: #111;
   padding: 25px;
   border-left: 4px solid var(--mars-red);
-  margin: 10px auto;
+  margin: 8px auto;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(233, 0, 0, 0.2);
@@ -149,7 +149,7 @@ section p {
 /* 📰 NEWSLETTER */
 .newsletter {
   background: linear-gradient(180deg, #151515, #0d0d0d);
-  padding: 50px 20px;
+  padding: 25px 15px;
 }
 
 .newsletter input[type="email"] {

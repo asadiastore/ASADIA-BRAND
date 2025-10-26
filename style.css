@@ -324,13 +324,14 @@ footer .small {
 }
 .center { display: flex; justify-content: center; align-items: center; }
 .spacer { height: 18px; }
+
 /* ========== SOCIAL LINKS ========== */
 .social-links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 40px;
 }
 
@@ -341,17 +342,10 @@ footer .small {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background: var(--mars-red);
   border-radius: 50%;
   font-size: 1.6rem;
   text-decoration: none;
-  box-shadow: 0 0 10px rgba(233, 0, 0, 0.6);
   transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 0 18px rgba(233, 0, 0, 0.9);
 }
 
 /* Brand Colors */
@@ -362,14 +356,19 @@ footer .small {
   box-shadow: 0 0 10px rgba(221,42,123,0.7);
 }
 
-/* ========== FOOTER ========== */
+/* Hover Animation */
+.social-links a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 18px rgba(255,255,255,0.9);
+}
+
+/* Footer Styling */
 footer {
-  padding: 30px 0;
+  padding: 40px 0 20px;
   text-align: center;
-  color: var(--white);
-  font-size: 0.95rem;
-  background: var(--black);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  background: #000;
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 footer .small {
   color: #bbb;

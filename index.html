@@ -208,24 +208,37 @@ footer .small{color:#999;font-size:.88rem;margin-top:8px}
 </head>
 
 <body>
-  <header>
-    <img src="logo/logo.png" alt="ASADIA Logo" class="logo">
+  <!-- Header -->
+<header role="banner">
+  <div class="wrap center" style="flex-direction:column">
+    <img src="logo.png" alt="ASADIA Logo" class="logo" onerror="this.onerror=null;this.src='logo/logo.png'">
     <h1 class="brand">ASADIA</h1>
-    <p class="tagline">Fashion · Style · Integrity</p>
-  </header>
+    <div class="tagline">"From the Ground Up — Rise with ASADIA."</div>
+  </div>
+</header>
 
-  <nav>
-    <div class="navwrap">
-      <a href="#home" class="navlink">Home</a>
-      <a href="#about" class="navlink">About</a>
-      <a href="#collections" class="navlink">Collections</a>
-      <a href="#blog" class="navlink">Blog</a>
-      <a href="#contact" class="navlink">Contact</a>
-    </div>
-  </nav>
+<!-- Navigation -->
+<nav role="navigation" aria-label="Main">
+  <div class="navwrap wrap">
+    <a class="navlink" href="#home">Home</a>
+    <a class="navlink" href="#men">Men</a>
+    <a class="navlink" href="#women">Women</a>
+    <a class="navlink" href="#kids">Kids</a>
+    <a class="navlink" href="#blog">Blog</a>
+    <a class="navlink" href="#testimonials">Testimonials</a>
+    <a class="navlink" href="#contact">Contact</a>
+  </div>
+</nav>
 
   <footer>
-    <p>© 2025 ASADIA. All Rights Reserved.</p>
+  <div class="wrap">
+    <div>&copy; <span id="year"></span> ASADIA. All rights reserved.</div>
+    <div class="small">Made with care • <a href="#privacy" style="color:var(--muted)">Privacy</a> • <a href="#terms" style="color:var(--muted)">Terms</a></div>
+  </div>
+  <footer>
+    <div class="wrap">
+      <p class="muted">© 2025 Asadia Fashion. Designed & Assisted by ChatGPT AI.</p>
+    </div>
   </footer>
 </body>
 </html>

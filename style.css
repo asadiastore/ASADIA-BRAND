@@ -325,7 +325,7 @@ footer .small {
 .center { display: flex; justify-content: center; align-items: center; }
 .spacer { height: 18px; }
 
-/* ========== SOCIAL LINKS ========== */
+/* ========== SOCIAL LINKS (CLEAN VERSION, NO SHADE) ========== */
 .social-links {
   display: flex;
   justify-content: center;
@@ -348,18 +348,16 @@ footer .small {
   transition: all 0.3s ease;
 }
 
-/* Brand Colors */
-.social-links a.whatsapp { background: #25D366; box-shadow: 0 0 10px rgba(37,211,102,0.6); }
-.social-links a.facebook { background: #1877F2; box-shadow: 0 0 10px rgba(24,119,242,0.6); }
+/* Solid Brand Colors — NO SHADOWS */
+.social-links a.whatsapp { background: #25D366; }
+.social-links a.facebook { background: #1877F2; }
 .social-links a.instagram {
   background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
-  box-shadow: 0 0 10px rgba(221,42,123,0.7);
 }
 
-/* Hover Animation */
+/* Hover Animation (soft zoom only) */
 .social-links a:hover {
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 0 18px rgba(255,255,255,0.9);
 }
 
 /* Footer Styling */

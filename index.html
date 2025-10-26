@@ -172,10 +172,37 @@
     .cols-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
     .muted{color:var(--muted)}
     /* Blog */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-.post{background:var(--dark-2);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
-.post h4{margin:0 0 8px;font-size:1.05rem}
-.post p{color:var(--muted);font-size:.95rem}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .post{background:var(--dark-2);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .post h4{margin:0 0 8px;font-size:1.05rem}
+    .post p{color:var(--muted);font-size:.95rem}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+    .testi{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));padding:18px;border-radius:10px}
+    .testi p{color:var(--muted);font-size:.98rem}
+
+    /* Newsletter */
+    .newsletter{background:linear-gradient(180deg, rgba(233,0,0,0.03), rgba(0,0,0,0.02));padding:28px;border-radius:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
+    .newsletter input[type="email"]{padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white);min-width:260px}
+    .newsletter button{padding:12px 18px;border-radius:10px;background:var(--accent);border:none;font-weight:700;cursor:pointer}
+
+    /* Contact & bank */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.contact-card{background:var(--dark-2);padding:18px;border-radius:10px}
+.bank{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));padding:18px;border-radius:10px;text-align:left}
+.small-muted{color:var(--muted);font-size:.92rem}
+
+/* Footer */
+footer{padding:28px 0;text-align:center;color:#cfcfcf;font-size:.95rem}
+footer .small{color:#999;font-size:.88rem;margin-top:8px}
+
+/* Buttons */
+.btn-ghost{padding:10px 14px;border:1px solid rgba(255,255,255,0.06);border-radius:8px;color:var(--white);background:transparent}
+
+/* Utility */
+.center{display:flex;justify-content:center;align-items:center}
+.spacer{height:18px}
   </style>
 </head>
 
@@ -208,32 +235,6 @@
 </body>
 </html>
 
-    /* Testimonials */
-    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
-    .testi{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));padding:18px;border-radius:10px}
-    .testi p{color:var(--muted);font-size:.98rem}
-
-    /* Newsletter */
-    .newsletter{background:linear-gradient(180deg, rgba(233,0,0,0.03), rgba(0,0,0,0.02));padding:28px;border-radius:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
-    .newsletter input[type="email"]{padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white);min-width:260px}
-    .newsletter button{padding:12px 18px;border-radius:10px;background:var(--accent);border:none;font-weight:700;cursor:pointer}
-
-    /* Contact & bank */
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
-    .contact-card{background:var(--dark-2);padding:18px;border-radius:10px}
-    .bank{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));padding:18px;border-radius:10px;text-align:left}
-    .small-muted{color:var(--muted);font-size:.92rem}
-
-    /* Footer */
-    footer{padding:28px 0;text-align:center;color:#cfcfcf;font-size:.95rem}
-    footer .small{color:#999;font-size:.88rem;margin-top:8px}
-
-    /* Buttons */
-    .btn-ghost{padding:10px 14px;border:1px solid rgba(255,255,255,0.06);border-radius:8px;color:var(--white);background:transparent}
-
-    /* Utility */
-    .center{display:flex;justify-content:center;align-items:center}
-    .spacer{height:18px}
   </style>
   <!-- ========== End CSS ========== -->
 </head>

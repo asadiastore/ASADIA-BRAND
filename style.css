@@ -348,3 +348,65 @@ footer p {
   color: #555;
   font-size: 0.95rem;
   padding: 0 20
+/* =========================
+   KIDS SECTION STYLING
+========================= */
+#kids {
+  background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+  padding: 80px 0;
+}
+
+#kids h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0077b6; /* soft blue */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#kids .lead-muted {
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+#kids .product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#kids .card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 320px;
+}
+
+#kids .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 119, 182, 0.25);
+}
+
+#kids .card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #0077b6;
+}
+
+#kids .card h3 {
+  margin-top: 15px;
+  color: #222;
+  font-weight: 600;
+}
+
+#kids .card p {
+  color: #555;
+  font-size: 0.95rem;
+  padding: 0 20px 20px;
+}

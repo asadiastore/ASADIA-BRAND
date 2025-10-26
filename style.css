@@ -383,14 +383,6 @@ footer .small {
     header { padding: 22px 0; }
   }
 
- /* Fix for Contact Section Background and Text */
-#contact {
-  background: transparent; /* removes unwanted black box */
-  color: #fff; /* keeps text readable */
-  text-align: center;
-  padding: 60px 20px;
-}
-
 /* Form box styling */
 .contact-form-wrap {
   background: rgba(255,255,255,0.05); /* soft transparent box look */

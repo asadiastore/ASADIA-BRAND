@@ -74,17 +74,44 @@
 </style>
 
     /* Header */
-    header{padding:30px 0 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.03)}
-    .logo{width:150px;height:auto;margin:0 auto 10px;filter:drop-shadow(0 0 14px rgba(233,0,0,0.38));transition:transform .25s}
-    .logo:hover{transform:scale(1.03)}
-    h1.brand{font-family:'Cinzel',serif;font-weight:700;font-size:2.8rem;letter-spacing:4px;margin:3px 0;color:var(--white);text-transform:uppercase}
-    .tagline{color:var(--mars-red);font-style:italic;margin-bottom:8px}
+header {
+  padding:30px 0 8px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.logo {
+  width:150px;
+  height:auto;
+  margin:0 auto 10px;
+  filter:drop-shadow(0 0 14px rgba(233,0,0,0.38));
+  transition:transform .25s;
+}
+.logo:hover { transform:scale(1.03); }
+h1.brand {
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:2.8rem;
+  letter-spacing:4px;
+  margin:3px 0;
+  color:var(--white);
+  text-transform:uppercase;
+}
+.tagline {
+  color:var(--mars-red);
+  font-style:italic;
+  margin-bottom:8px;
+}
 
-    /* Google Translate container */
-    .langwrap{position:absolute;right:16px;top:14px;z-index:1000}
+/* Google Translate container */
+.langwrap {
+  position:absolute;
+  right:16px;
+  top:14px;
+  z-index:1000;
+}
 
-    /* Navigation */
-    nav {
+/* Navigation */
+nav {
   position: sticky;
   top: 0;
   z-index: 80;
@@ -92,10 +119,25 @@
   background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));
   box-shadow: 0 6px 20px rgba(0,0,0,0.6);
 }
+
+.navwrap {
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  padding:12px 0;
 }
-    .navwrap{display:flex;justify-content:center;gap:18px;padding:12px 0}
-    .navlink{color:var(--white);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px}
-    .navlink:hover{color:var(--mars-red);background:rgba(233,0,0,0.03);transform:translateY(-2px)}
+.navlink {
+  color:var(--white);
+  text-decoration:none;
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:6px;
+}
+.navlink:hover {
+  color:var(--mars-red);
+  background:rgba(233,0,0,0.03);
+  transform:translateY(-2px);
+}
 
     /* Hero */
     .hero{padding:60px 0 36px;text-align:center}

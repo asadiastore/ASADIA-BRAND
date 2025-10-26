@@ -1,143 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ========== ASADIA — Full Site (Final) ========== -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ASADIA — Fashion · Style · Integrity</title>
+  <!-- ========== ASADIA — Full Site (Final Clean Version) ========== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ASADIA — Fashion · Style · Integrity</title>
 
-<meta name="description" content="ASADIA — Ethical, high-quality fashion for Men, Women & Kids. Exclusive collections, blog, testimonials and newsletter." />
-<meta name="keywords" content="ASADIA, fashion, men, women, kids, collection, luxury, sustainable" />
-<meta name="author" content="ASADIA Brand" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://asadiastore.github.io/ASADIA-BRAND/" />
+  <meta name="description" content="ASADIA — Ethical, high-quality fashion for Men, Women & Kids. Exclusive collections, blog, testimonials and newsletter." />
+  <meta name="keywords" content="ASADIA, fashion, men, women, kids, collection, luxury, sustainable" />
+  <meta name="author" content="ASADIA Brand" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/png" href="logo/logo.png" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="logo/logo.png" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-<!-- Social Meta -->
-<meta property="og:title" content="ASADIA — Fashion · Style · Integrity" />
-<meta property="og:description" content="Discover ASADIA — ethical, high-quality fashion." />
-<meta property="og:image" content="https://asadiastore.github.io/ASADIA-BRAND/logo/logo.png" />
-<meta property="og:url" content="https://asadiastore.github.io/ASADIA-BRAND/" />
-<meta name="twitter:card" content="summary_large_image" />
+  <!-- ====== Inline CSS ====== -->
+  <style>
+    :root {
+      --mars-red:#E90000;
+      --accent:#ffcc00;
+      --white:#ffffff;
+      --muted:#bfbfbf;
+      --dark-1:#0b0b0b;
+      --dark-2:#141414;
+      --glass:rgba(255,255,255,0.03);
+      --max-width:1200px;
+    }
 
-<!-- Fonts (Cinzel + Poppins) -->
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    html, body {
+      margin:0;
+      padding:0;
+      height:100%;
+      font-family:'Poppins',sans-serif;
+      color:var(--white);
+      background:var(--dark-1);
+      background-image:
+        radial-gradient(1000px 300px at 10% 10%, rgba(233,0,0,0.06), transparent 10%),
+        radial-gradient(900px 250px at 85% 85%, rgba(255,204,0,0.03), transparent 10%),
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.007) 1px, transparent 2px),
+        linear-gradient(180deg,#0b0b0b 0%, #141417 100%);
+      background-size:cover;
+      background-attachment:fixed;
+    }
 
-<!-- External CSS File -->
-<link rel="stylesheet" href="style.css" />
+    .wrap {
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:0 18px;
+    }
 
-<!-- Inline CSS (GitHub Pages fallback) -->
-<style>
-  body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+    /* Header */
+    header {
+      padding:30px 0 8px;
+      text-align:center;
+      border-bottom:1px solid rgba(255,255,255,0.03);
+    }
+    .logo {
+      width:150px;
+      height:auto;
+      margin:0 auto 10px;
+      filter:drop-shadow(0 0 14px rgba(233,0,0,0.38));
+      transition:transform .25s;
+    }
+    .logo:hover { transform:scale(1.03); }
+    h1.brand {
+      font-family:'Cinzel',serif;
+      font-weight:700;
+      font-size:2.8rem;
+      letter-spacing:4px;
+      margin:3px 0;
+      color:var(--white);
+      text-transform:uppercase;
+    }
+    .tagline {
+      color:var(--mars-red);
+      font-style:italic;
+      margin-bottom:8px;
+    }
 
-  :root {
-    --mars-red:#E90000;
-    --accent:#ffcc00;
-    --white:#ffffff;
-    --muted:#bfbfbf;
-    --dark-1:#0b0b0b;
-    --dark-2:#141414;
-    --glass:rgba(255,255,255,0.03);
-    --max-width:1200px;
-  }
+    /* Navigation */
+    nav {
+      position:sticky;
+      top:0;
+      z-index:80;
+      backdrop-filter:blur(6px);
+      background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));
+      box-shadow:0 6px 20px rgba(0,0,0,0.6);
+    }
+    .navwrap {
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      padding:12px 0;
+    }
+    .navlink {
+      color:var(--white);
+      text-decoration:none;
+      font-weight:600;
+      padding:8px 10px;
+      border-radius:6px;
+    }
+    .navlink:hover {
+      color:var(--mars-red);
+      background:rgba(233,0,0,0.03);
+      transform:translateY(-2px);
+    }
 
-  html,body {
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
-    color:var(--white);
-    background:var(--dark-1);
-    -webkit-font-smoothing:antialiased;
-  }
+    /* Hero Section */
+    .hero {
+      text-align:center;
+      padding:100px 20px;
+      background:linear-gradient(180deg, rgba(233,0,0,0.05), transparent 60%);
+    }
+    .hero h2 {
+      font-family:'Cinzel',serif;
+      font-size:2.6rem;
+      margin-bottom:12px;
+    }
+    .hero p {
+      max-width:700px;
+      margin:0 auto 22px;
+      font-size:1.1rem;
+      color:var(--muted);
+    }
+    .btn {
+      background:var(--mars-red);
+      color:var(--white);
+      padding:12px 28px;
+      border:none;
+      border-radius:8px;
+      font-weight:600;
+      cursor:pointer;
+      text-transform:uppercase;
+      transition:0.25s;
+    }
+    .btn:hover {
+      background:var(--accent);
+      color:var(--dark-1);
+      transform:translateY(-2px);
+    }
 
-  /* Digital marble background */
-  body {
-    background-image:
-      radial-gradient(1000px 300px at 10% 10%, rgba(233,0,0,0.06), transparent 10%),
-      radial-gradient(900px 250px at 85% 85%, rgba(255,204,0,0.03), transparent 10%),
-      repeating-linear-gradient(135deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.007) 1px, transparent 2px),
-      linear-gradient(180deg,#0b0b0b 0%, #141417 100%);
-  }
+    footer {
+      text-align:center;
+      padding:40px 0 20px;
+      font-size:0.9rem;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
 
-  .wrap {
-    max-width:var(--max-width);
-    margin:0 auto;
-    padding:0 18px;
-  }
+<body>
+  <header>
+    <img src="logo/logo.png" alt="ASADIA Logo" class="logo">
+    <h1 class="brand">ASADIA</h1>
+    <p class="tagline">Fashion · Style · Integrity</p>
+  </header>
 
-  /* Header */
-  header {
-    padding:30px 0 8px;
-    text-align:center;
-    border-bottom:1px solid rgba(255,255,255,0.03);
-  }
-  .logo {
-    width:150px;
-    height:auto;
-    margin:0 auto 10px;
-    filter:drop-shadow(0 0 14px rgba(233,0,0,0.38));
-    transition:transform .25s;
-  }
-  .logo:hover { transform:scale(1.03); }
-  h1.brand {
-    font-family:'Cinzel',serif;
-    font-weight:700;
-    font-size:2.8rem;
-    letter-spacing:4px;
-    margin:3px 0;
-    color:var(--white);
-    text-transform:uppercase;
-  }
-  .tagline {
-    color:var(--mars-red);
-    font-style:italic;
-    margin-bottom:8px;
-  }
+  <nav>
+    <div class="navwrap">
+      <a href="#home" class="navlink">Home</a>
+      <a href="#about" class="navlink">About</a>
+      <a href="#collections" class="navlink">Collections</a>
+      <a href="#blog" class="navlink">Blog</a>
+      <a href="#contact" class="navlink">Contact</a>
+    </div>
+  </nav>
 
-  /* Google Translate container */
-  .langwrap {
-    position:absolute;
-    right:16px;
-    top:14px;
-    z-index:1000;
-  }
+  <section class="hero" id="home">
+    <h2>Discover Timeless Elegance</h2>
+    <p>Explore ASADIA’s exclusive range of fashion for Men, Women, and Kids. Designed with passion, made with integrity.</p>
+    <button class="btn">Shop Now</button>
+  </section>
 
-  /* Navigation */
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 80;
-    backdrop-filter: blur(6px);
-    background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));
-    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-  }
-
-  .navwrap {
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    padding:12px 0;
-  }
-  .navlink {
-    color:var(--white);
-    text-decoration:none;
-    font-weight:600;
-    padding:8px 10px;
-    border-radius:6px;
-  }
-  .navlink:hover {
-    color:var(--mars-red);
-    background:rgba(233,0,0,0.03);
-    transform:translateY(-2px);
-  }
-</style>
+  <footer>
+    <p>© 2025 ASADIA. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
 
     /* Hero */
     .hero{padding:60px 0 36px;text-align:center}

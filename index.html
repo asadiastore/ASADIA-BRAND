@@ -84,7 +84,15 @@
     .langwrap{position:absolute;right:16px;top:14px;z-index:1000}
 
     /* Navigation */
-    nav{position:sticky;top:0;z-index:80;background:linear-gradient(180deg,rgba(0,0,0,0.02),rgba(255,255,255,0.01));box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+    nav {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+}
     .navwrap{display:flex;justify-content:center;gap:18px;padding:12px 0}
     .navlink{color:var(--white);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:6px}
     .navlink:hover{color:var(--mars-red);background:rgba(233,0,0,0.03);transform:translateY(-2px)}

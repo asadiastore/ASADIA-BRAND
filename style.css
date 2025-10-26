@@ -324,3 +324,50 @@ footer .small {
 }
 .center { display: flex; justify-content: center; align-items: center; }
 .spacer { height: 18px; }
+/* Social Links Section */
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.social-links a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #0a0a0a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.35s ease;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px);
+}
+
+.social-links .whatsapp:hover {
+  background: #25D366;
+  box-shadow: 0 0 12px #25D366;
+}
+
+.social-links .facebook:hover {
+  background: #1877F2;
+  box-shadow: 0 0 12px #1877F2;
+}
+
+.social-links .instagram:hover {
+  background: #E1306C;
+  box-shadow: 0 0 12px #E1306C;
+}
+
+.social-links .website:hover {
+  background: #E90000;
+  box-shadow: 0 0 12px #E90000;
+}

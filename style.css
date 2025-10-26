@@ -383,33 +383,54 @@ footer .small {
     header { padding: 22px 0; }
   }
 
-  /* Contact Form Centering */
+ /* Fix for Contact Section Background and Text */
+#contact {
+  background: transparent; /* removes unwanted black box */
+  color: #fff; /* keeps text readable */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Form box styling */
 .contact-form-wrap {
+  background: rgba(255,255,255,0.05); /* soft transparent box look */
+  padding: 30px;
+  border-radius: 15px;
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+
+/* Input fields and button consistent look */
 .contact-form-wrap input,
 .contact-form-wrap textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
   color: #fff;
+  border-radius: 8px;
   margin-bottom: 12px;
 }
+
 .contact-form-wrap button {
   background: #E90000;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 8px;
   color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
+
 .contact-form-wrap button:hover {
   background: #ff2b2b;
+}
+
+/* Keep entire site dark background */
+body {
+  background: #000; /* only bank remains black */
+}
 }
 
 /* Social Links */

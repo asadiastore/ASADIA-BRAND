@@ -432,4 +432,13 @@ footer .small {
   color: #E90000;
   transform: scale(1.2);
 }
+
+.social-links a.tiktok {
+  color: #000;
+}
+
+.social-links a.tiktok:hover {
+  color: #E90000;
+  transform: scale(1.2);
+}
 </style>

@@ -171,6 +171,11 @@
     /* Collections & gallery */
     .cols-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
     .muted{color:var(--muted)}
+    /* Blog */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.post{background:var(--dark-2);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+.post h4{margin:0 0 8px;font-size:1.05rem}
+.post p{color:var(--muted);font-size:.95rem}
   </style>
 </head>
 
@@ -202,15 +207,6 @@
   </footer>
 </body>
 </html>
-
-    /* Blog */
-    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-    .post{background:var(--dark-2);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
-    .post h4{margin:0 0 8px;font-size:1.05rem}
-    .post p{color:var(--muted);font-size:.95rem}
-
-    @media (max-width:900px){ .blog-grid{grid-template-columns:repeat(2,1fr)} }
-    @media (max-width:600px){ .blog-grid{grid-template-columns:1fr} }
 
     /* Testimonials */
     .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}

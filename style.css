@@ -353,14 +353,7 @@ footer .small {
 .social-links a.instagram {
   background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
 }
-.social-links a.tiktok {
-  color: #000;
-}
 
-.social-links a.tiktok:hover {
-  color: #E90000;
-  transform: scale(1.2);
-}
 /* Hover Animation (soft zoom only) */
 .social-links a:hover {
   transform: translateY(-5px) scale(1.1);
@@ -430,5 +423,13 @@ footer .small {
 }
 .contact-form-wrap button:hover {
   background: #c40000;
+}
+.social-links a.tiktok {
+  color: #000;
+}
+
+.social-links a.tiktok:hover {
+  color: #E90000;
+  transform: scale(1.2);
 }
 </style>

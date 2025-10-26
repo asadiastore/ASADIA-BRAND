@@ -383,16 +383,6 @@ footer .small {
     header { padding: 22px 0; }
   }
 
-/* Form box styling */
-.contact-form-wrap {
-  background: rgba(255,255,255,0.05); /* soft transparent box look */
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
 /* ✅ CONTACT FORM FIX - CENTERED WITHOUT BLACK BACKGROUND */
 #contact {
   background: transparent; /* remove any black bg */
@@ -406,7 +396,6 @@ footer .small {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-
 .contact-form-wrap {
   background: #ffffff; /* pure white box */
   color: #000; /* normal black text */
@@ -416,7 +405,6 @@ footer .small {
   width: 100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .contact-form-wrap input,
 .contact-form-wrap textarea {
   width: 100%;
@@ -427,7 +415,6 @@ footer .small {
   color: #000;
   margin-bottom: 12px;
 }
-
 .contact-form-wrap button {
   background: #E90000;
   color: #fff;
@@ -437,11 +424,9 @@ footer .small {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .contact-form-wrap button:hover {
   background: #c40000;
 }
-
 /* Social Links */
 .social-links {
   display: flex;

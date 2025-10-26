@@ -1,19 +1,19 @@
 /* ==========================================================
    ASADIA FASHION STYLE.CSS
-   Theme: Digital Marble Black + Mars Red + White
+   Theme: Clean White + Mars Red + Cosmic Black (Modern)
    Author: Asad Malik
    ========================================================== */
 
-/* 🧱 COLOR PALETTE */
+/* 🎨 COLOR PALETTE */
 :root {
-  --cosmic-black: #0d0d0d;
-  --mars-red: #e90000;
-  --pure-white: #ffffff;
-  --marble-gray: #1a1a1a;
-  --soft-shadow: rgba(233, 0, 0, 0.25);
+  --background: #ffffff;
+  --text-dark: #1a1a1a;
+  --accent: #e90000;
+  --soft-gray: #f7f7f7;
+  --shadow: rgba(233, 0, 0, 0.15);
 }
 
-/* 🌐 BASE LAYOUT */
+/* 🌐 RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,19 +22,18 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(145deg, var(--cosmic-black), var(--marble-gray));
-  background-attachment: fixed;
-  color: var(--pure-white);
+  background: var(--background);
+  color: var(--text-dark);
   text-align: center;
   overflow-x: hidden;
 }
 
-/* ✨ HEADER + LOGO */
+/* ✨ HEADER */
 header {
   padding: 40px 20px;
-  background: radial-gradient(circle, #111 0%, #000 100%);
-  border-bottom: 3px solid var(--mars-red);
-  box-shadow: 0 0 25px var(--soft-shadow);
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  border-bottom: 3px solid var(--accent);
+  box-shadow: 0 0 20px var(--shadow);
 }
 
 .logo {
@@ -42,7 +41,6 @@ header {
   height: auto;
   display: block;
   margin: 0 auto 15px auto;
-  filter: drop-shadow(0 0 8px rgba(233, 0, 0, 0.7));
   transition: transform 0.3s ease;
 }
 .logo:hover {
@@ -53,48 +51,48 @@ header h1 {
   font-size: 3em;
   letter-spacing: 4px;
   font-weight: 700;
-  color: var(--pure-white);
+  color: var(--text-dark);
 }
 
 .tagline {
-  color: var(--mars-red);
+  color: var(--accent);
   font-style: italic;
   font-size: 1.2em;
 }
 
 /* 🧭 NAVIGATION */
 nav {
-  background-color: #151515;
+  background: #f9f9f9;
   padding: 15px 0;
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 nav a {
-  color: var(--pure-white);
+  color: var(--text-dark);
   text-decoration: none;
   margin: 0 20px;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--mars-red);
+  color: var(--accent);
 }
 
 /* 🪶 SECTIONS */
 section {
-  padding: 40px 15px;
-  border-bottom: 1px solid #222;
-  background: linear-gradient(180deg, #0f0f0f 0%, #1b1b1b 100%);
+  padding: 60px 15px;
+  border-bottom: 1px solid #eee;
+  background: var(--soft-gray);
 }
 
 section h2 {
-  font-size: 2.6em;
-  color: var(--mars-red);
+  font-size: 2.4em;
+  color: var(--accent);
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -103,7 +101,7 @@ section h2 {
 section p {
   font-size: 1.1em;
   line-height: 1.8;
-  color: #e0e0e0;
+  color: var(--text-dark);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -113,20 +111,20 @@ section p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .product-card {
-  background-color: #111;
+  background: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(233, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(233, 0, 0, 0.3);
+  box-shadow: 0 0 25px var(--shadow);
 }
 
 .product-card img {
@@ -137,25 +135,25 @@ section p {
 
 /* 💬 TESTIMONIALS */
 .testimonial {
-  background: #111;
+  background: #fff;
   padding: 25px;
-  border-left: 4px solid var(--mars-red);
-  margin: 8px auto;
+  border-left: 4px solid var(--accent);
+  margin: 15px auto;
   max-width: 600px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(233, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(233, 0, 0, 0.15);
 }
 
 /* 📰 NEWSLETTER */
 .newsletter {
-  background: linear-gradient(180deg, #151515, #0d0d0d);
-  padding: 25px 15px;
+  background: linear-gradient(180deg, #ffffff, #f8f8f8);
+  padding: 50px 20px;
 }
 
 .newsletter input[type="email"] {
   padding: 12px;
-  width: 300px;
-  border: none;
+  width: 280px;
+  border: 1px solid #ddd;
   outline: none;
   border-radius: 30px;
   margin: 10px;
@@ -164,9 +162,9 @@ section p {
 }
 
 .newsletter button {
-  padding: 35px 20px;
-  background-color: var(--mars-red);
-  color: var(--pure-white);
+  padding: 12px 25px;
+  background-color: var(--accent);
+  color: #fff;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -175,36 +173,25 @@ section p {
 }
 
 .newsletter button:hover {
-  background-color: #ff1919;
-}
-
-/* 🌍 LANGUAGE SELECTOR */
-.lang-select {
-  margin-top: 20px;
-  background-color: #222;
-  color: var(--pure-white);
-  border: 1px solid #444;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #ff1f1f;
 }
 
 /* 📞 CONTACT SECTION */
 #contact p {
   margin-bottom: 10px;
-  color: #ddd;
+  color: var(--text-dark);
 }
 .accent-text {
-  color: var(--mars-red);
+  color: var(--accent);
   font-weight: 700;
 }
 
 /* 🧭 FOOTER */
 footer {
-  background: #0d0d0d;
-  color: #888;
+  background: #1a1a1a;
+  color: #fff;
   padding: 25px 10px;
-  border-top: 2px solid var(--mars-red);
+  border-top: 3px solid var(--accent);
   font-size: 0.9em;
 }
 footer p {
@@ -214,11 +201,10 @@ footer p {
 /* 📱 RESPONSIVE */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 2.1em;
-    letter-spacing: 2px;
+    font-size: 2.2em;
   }
   section h2 {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
   nav a {
     margin: 0 10px;
@@ -227,257 +213,4 @@ footer p {
   .newsletter input[type="email"] {
     width: 90%;
   }
-}
-/* ==== MEN SECTION STYLING ==== */
-#men {
-  background: #f8f9fa;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-#men h2 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-#men .lead-muted {
-  color: #555;
-  margin-bottom: 40px;
-}
-
-#men .product-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-#men .card {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 320px;
-}
-
-#men .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-
-#men .card img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-}
-
-#men .card h3 {
-  font-size: 1.5rem;
-  margin: 15px 0 5px 0;
-  color: #111;
-}
-
-#men .card p {
-  color: #666;
-  font-size: 0.95rem;
-  padding: 0 15px 20px;
-}
-/* =========================
-   WOMEN SECTION STYLING
-========================= */
-#women {
-  background: linear-gradient(180deg, #fff5f8 0%, #ffffff 100%);
-  padding: 80px 0;
-}
-
-#women h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #d63384; /* Elegant pink tone */
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#women .lead-muted {
-  text-align: center;
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 50px;
-}
-
-#women .product-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-#women .card {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(214, 51, 132, 0.2);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  text-align: center;
-  width: 320px;
-}
-
-#women .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(214, 51, 132, 0.3);
-}
-
-#women .card img {
-  width: 100%;
-  height: auto;
-  border-bottom: 5px solid #d63384;
-}
-
-#women .card h3 {
-  margin-top: 15px;
-  color: #222;
-  font-weight: 600;
-}
-
-#women .card p {
-  color: #555;
-  font-size: 0.95rem;
-  padding: 0 20
-/* =========================
-   KIDS SECTION STYLING
-========================= */
-#kids {
-  background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
-  padding: 80px 0;
-}
-
-#kids h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #0077b6; /* soft blue */
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#kids .lead-muted {
-  text-align: center;
-  color: #444;
-  font-size: 1rem;
-  margin-bottom: 50px;
-}
-
-#kids .product-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-#kids .card {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 119, 182, 0.15);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  text-align: center;
-  width: 320px;
-}
-
-#kids .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 119, 182, 0.25);
-}
-
-#kids .card img {
-  width: 100%;
-  height: auto;
-  border-bottom: 5px solid #0077b6;
-}
-
-#kids .card h3 {
-  margin-top: 15px;
-  color: #222;
-  font-weight: 600;
-}
-
-#kids .card p {
-  color: #555;
-  font-size: 0.95rem;
-  padding: 0 20px 20px;
-}
-/* ============================= */
-/* COLLECTIONS SECTION - ASADIA  */
-/* ============================= */
-
-#collections {
-  background: linear-gradient(to bottom, #111, #0a0a0a);
-  padding: 80px 0;
-  text-align: center;
-  color: #fff;
-}
-
-#collections h2 {
-  font-family: 'Kreskat', serif;
-  font-size: 2.2rem;
-  color: #e63946;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#collections p.lead-muted {
-  color: #ccc;
-  font-size: 1.1rem;
-  margin-bottom: 50px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.collections-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 0 20px;
-}
-
-.collection-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  overflow: hidden;
-  width: 280px;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
-}
-
-.collection-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-}
-
-.collection-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.collection-card h3 {
-  font-size: 1.4rem;
-  color: #fff;
-  margin: 15px 0 5px;
-  font-family: 'Kreskat', serif;
-}
-
-.collection-card p {
-  font-size: 0.95rem;
-  color: #bbb;
-  padding: 0 15px 20px;
-  line-height: 1.5;
 }

@@ -87,7 +87,7 @@ nav a:hover {
 
 /* 🪶 SECTIONS */
 section {
-  padding: 70px 20px;
+  padding: 35px 20px;
   border-bottom: 1px solid #222;
   background: linear-gradient(180deg, #0f0f0f 0%, #1b1b1b 100%);
 }
@@ -113,7 +113,7 @@ section p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .product-card {
@@ -140,7 +140,7 @@ section p {
   background: #111;
   padding: 25px;
   border-left: 4px solid var(--mars-red);
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(233, 0, 0, 0.2);
@@ -164,7 +164,7 @@ section p {
 }
 
 .newsletter button {
-  padding: 12px 25px;
+  padding: 35px 20px;
   background-color: var(--mars-red);
   color: var(--pure-white);
   border: none;

@@ -401,26 +401,28 @@ footer .small {
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-/* ========== CONTACT FORM CENTER FIX & REMOVE BLACK BG ========== */
+/* ✅ CONTACT FORM FIX - CENTERED WITHOUT BLACK BACKGROUND */
 #contact {
-  background: transparent !important; /* removes black background */
-  color: inherit; /* keeps text color normal */
+  background: transparent; /* remove any black bg */
+  color: inherit; /* normal text color */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding: 60px 20px;
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .contact-form-wrap {
-  background: rgba(255,255,255,0.05); /* soft transparent box */
+  background: #ffffff; /* pure white box */
+  color: #000; /* normal black text */
   padding: 30px;
   border-radius: 15px;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form-wrap input,
@@ -428,9 +430,9 @@ footer .small {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.1);
-  color: #fff;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  color: #000;
   margin-bottom: 12px;
 }
 
@@ -445,7 +447,7 @@ footer .small {
 }
 
 .contact-form-wrap button:hover {
-  background: #ff2b2b;
+  background: #c40000;
 }
 
 /* Social Links */

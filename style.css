@@ -324,50 +324,55 @@ footer .small {
 }
 .center { display: flex; justify-content: center; align-items: center; }
 .spacer { height: 18px; }
-/* Social Links Section */
+/* ========== SOCIAL LINKS ========== */
 .social-links {
   display: flex;
-  gap: 20px;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  gap: 25px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .social-links a {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background: #0a0a0a;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: all 0.35s ease;
-  font-size: 1.3rem;
+  background: var(--mars-red);
+  border-radius: 50%;
+  font-size: 1.6rem;
   text-decoration: none;
+  box-shadow: 0 0 10px rgba(233, 0, 0, 0.6);
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 18px rgba(233, 0, 0, 0.9);
 }
 
-.social-links .whatsapp:hover {
-  background: #25D366;
-  box-shadow: 0 0 12px #25D366;
+/* Brand Colors */
+.social-links a.whatsapp { background: #25D366; box-shadow: 0 0 10px rgba(37,211,102,0.6); }
+.social-links a.facebook { background: #1877F2; box-shadow: 0 0 10px rgba(24,119,242,0.6); }
+.social-links a.instagram {
+  background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+  box-shadow: 0 0 10px rgba(221,42,123,0.7);
 }
 
-.social-links .facebook:hover {
-  background: #1877F2;
-  box-shadow: 0 0 12px #1877F2;
+/* ========== FOOTER ========== */
+footer {
+  padding: 30px 0;
+  text-align: center;
+  color: var(--white);
+  font-size: 0.95rem;
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-
-.social-links .instagram:hover {
-  background: #E1306C;
-  box-shadow: 0 0 12px #E1306C;
-}
-
-.social-links .website:hover {
-  background: #E90000;
-  box-shadow: 0 0 12px #E90000;
+footer .small {
+  color: #bbb;
+  font-size: 0.85rem;
+  margin-top: 8px;
 }

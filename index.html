@@ -1,0 +1,1195 @@
+<!--========================================================= 
+    Item Name: Asadia Store - Ecommerce HTML Template + Admin Dashboard.
+    Author: Asad Malik
+    Version: 1.0
+    Copyright 2025
+ ============================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Asadia Store | Fashion & Lifestyle</title>
+    <meta name="keywords"
+        content="asadia, fashion, cosmetics, wear, ecommerce, lifestyle, modern store, responsive design, online shop" />
+    <meta name="description" content="Asadia Store - The modern fashion and lifestyle ecommerce brand for men, women, kids and home collections.">
+    <meta name="author" content="Asad Malik">
+
+    <!-- site Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/images/favicon/favicon.png" />
+    <meta name="msapplication-TileImage" content="assets/images/favicon/favicon.png" />
+
+    <!-- css Icon Font -->
+    <link rel="stylesheet" href="assets/css/vendor/ecicons.min.css" />
+
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/countdownTimer.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/demo1.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css"> <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Background css -->
+    <link rel="stylesheet" id="bg-switcher-css" href="assets/css/backgrounds/bg-4.css">
+</head>
+
+<body>
+    <div id="ec-overlay">
+        <div class="ec-ellipsis">
+            <div></div><div></div><div></div><div></div>
+        </div>
+    </div>
+
+    <!-- Header start  -->
+    <header class="ec-header">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col text-left header-top-left d-none d-lg-block">
+                        <div class="header-top-social">
+                            <span class="social-text text-upper">Follow Asadia Store:</span>
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col text-center header-top-center">
+                        <div class="header-top-message text-upper">
+                            <span>Free Shipping</span> On Orders Over $75
+                        </div>
+                    </div>
+                    <div class="col header-top-right d-none d-lg-block">
+                        <div class="header-top-lan-curr d-flex justify-content-end">
+                            <div class="header-top-curr dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i
+                                        class="ecicon eci-caret-down"></i></button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">USD $</a></li>
+                                    <li><a href="#">EUR €</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-top-lan dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i
+                                        class="ecicon eci-caret-down"></i></button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">English</a></li>
+                                    <li><a href="#">Azerbaijani</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-lg-none ">
+                        <div class="ec-header-bottons">
+                            <div class="ec-header-user dropdown">
+                                <button class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fi-rr-user"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                </ul>
+                            </div>
+                            <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                                <div class="header-icon"><i class="fi-rr-heart"></i></div>
+                                <span class="ec-header-count">4</span>
+                            </a>
+                            <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                                <div class="header-icon"><i class="fi-rr-shopping-bag"></i></div>
+                                <span class="ec-header-count cart-count-lable">3</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Bottom -->
+        <div class="ec-header-bottom d-none d-lg-block">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="ec-flex">
+                        <div class="align-self-center">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="Asadia Store Logo" /></a>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <div class="header-search">
+                                <form class="ec-btn-group-form" action="#">
+                                    <input class="form-control ec-search-bar" placeholder="Search Asadia products..." type="text">
+                                    <button class="submit" type="submit"><i class="fi-rr-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <div class="ec-header-bottons">
+                                <div class="ec-header-user dropdown">
+                                    <button class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fi-rr-user"></i></button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                    </ul>
+                                </div>
+                                <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                                    <div class="header-icon"><i class="fi-rr-heart"></i></div>
+                                    <span class="ec-header-count">4</span>
+                                </a>
+                                <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                                    <div class="header-icon"><i class="fi-rr-shopping-bag"></i></div>
+                                    <span class="ec-header-count cart-count-lable">3</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===============================
+   ASADIA STORE CATEGORY SIDEBAR
+   =============================== -->
+<div class="ec-side-cat-overlay"></div>
+<div class="col-lg-3 category-sidebar" data-animation="fadeIn">
+  <div class="cat-sidebar">
+    <div class="cat-sidebar-box">
+      <div class="ec-sidebar-wrap">
+        <div class="ec-sidebar-block">
+          <div class="ec-sb-title">
+            <h3 class="ec-sidebar-title">Categories <button class="ec-close">×</button></h3>
+          </div>
+
+          <div class="ec-sb-block-content">
+            <ul>
+              <!-- 🌙 Winter Collection -->
+              <li>
+                <div class="ec-sidebar-block-item">
+                  <img src="assets/images/icons/snowflake.png" class="svg_img" alt="winter" /> Winter Collection
+                </div>
+                <ul>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Home Collection</a></li>
+                  <li><a href="#">Books Collection</a></li>
+                </ul>
+              </li>
+
+              <!-- ☀️ Summer Collection -->
+              <li>
+                <div class="ec-sidebar-block-item">
+                  <img src="assets/images/icons/sun.png" class="svg_img" alt="summer" /> Summer Collection
+                </div>
+                <ul>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Home Collection</a></li>
+                  <li><a href="#">Books Collection</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Best Sellers Section -->
+    <div class="ec-sidebar-slider-cat">
+      <div class="ec-sb-slider-title">Best Sellers</div>
+      <div class="ec-sb-pro-sl">
+        <div class="ec-sb-pro-sl-item">
+          <a href="#" class="sidekka_pro_img"><img src="assets/images/product-image/1.jpg" alt="product" /></a>
+          <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="#">Luxury Winter Jacket</a></h5>
+            <div class="ec-pro-rating">
+              <i class="ecicon eci-star fill"></i>
+              <i class="ecicon eci-star fill"></i>
+              <i class="ecicon eci-star fill"></i>
+              <i class="ecicon eci-star fill"></i>
+              <i class="ecicon eci-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===============================
+   END ASADIA STORE CATEGORY SIDEBAR
+   =============================== -->
+<!-- 🛍️ ASADIA STORE – BEST SELLERS (Sidebar) -->
+<div class="ec-sidebar-slider-cat">
+    <div class="ec-sb-slider-title">Best Sellers</div>
+    <div class="ec-sb-pro-sl">
+        <div>
+            <div class="ec-sb-pro-sl-item">
+                <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                    <img src="assets/images/product-image/1.jpg" alt="Asadia Product" />
+                </a>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Men’s Winter Jacket</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="ec-sb-pro-sl-item">
+                <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                    <img src="assets/images/product-image/3.jpg" alt="Asadia Product" />
+                </a>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Women’s Elegant Dress</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="ec-sb-pro-sl-item">
+                <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                    <img src="assets/images/product-image/5.jpg" alt="Asadia Product" />
+                </a>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Kids Cozy Winter Wear</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🌟 ASADIA STORE – MAIN SLIDER -->
+<div class="sticky-header-next-sec ec-main-slider section section-space-pb">
+    <div class="ec-slider swiper-container main-slider-nav main-slider-dot">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="ec-slide-item swiper-slide d-flex ec-slide-1" style="background-color:#000;">
+                <div class="container align-self-center">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
+                            <div class="ec-slide-content slider-animation">
+                                <h1 class="ec-slide-title text-white">Asadia Store</h1>
+                                <h2 class="ec-slide-stitle" style="color:red;">Winter Fashion Collection</h2>
+                                <p class="text-light">Luxury, warmth, and style – all in one collection.</p>
+                                <a href="shop-left-sidebar-col-3.html" class="btn btn-lg btn-danger">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="ec-slide-item swiper-slide d-flex ec-slide-2" style="background-color:#111;">
+                <div class="container align-self-center">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
+                            <div class="ec-slide-content slider-animation">
+                                <h1 class="ec-slide-title text-white">Asadia Summer 2025</h1>
+                                <h2 class="ec-slide-stitle" style="color:red;">Light • Bold • Elegant</h2>
+                                <p class="text-light">Step into comfort and confidence this summer.</p>
+                                <a href="shop-left-sidebar-col-3.html" class="btn btn-lg btn-light text-dark">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="ec-slide-item swiper-slide d-flex ec-slide-3" style="background-color:#222;">
+                <div class="container align-self-center">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
+                            <div class="ec-slide-content slider-animation">
+                                <h1 class="ec-slide-title text-white">Kids & Home Collection</h1>
+                                <h2 class="ec-slide-stitle" style="color:red;">Comfort for Every Home</h2>
+                                <p class="text-light">From playful fashion to cozy decor — Asadia has it all.</p>
+                                <a href="shop-left-sidebar-col-3.html" class="btn btn-lg btn-danger">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Slider Navigation -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <div class="swiper-buttons">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>
+    <!-- 🛍️ ASADIA STORE – PRODUCT COLLECTION -->
+<section class="section ec-product-tab section-space-p" id="collection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-title">
+                    <h2 class="ec-bg-title">Asadia Collection</h2>
+                    <h2 class="ec-title" style="color:red;">Our Top Collections</h2>
+                    <p class="sub-title text-white">Explore Asadia’s Best Winter & Summer Styles</p>
+                </div>
+            </div>
+
+            <!-- Tabs Start -->
+            <div class="col-md-12 text-center">
+                <ul class="ec-pro-tab-nav nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab-pro-for-all">All</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-pro-for-men">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-pro-for-women">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-pro-for-kids">Kids</a></li>
+                </ul>
+            </div>
+            <!-- Tabs End -->
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="tab-content">
+
+                    <!-- 🧥 All Products -->
+                    <div class="tab-pane fade show active" id="tab-pro-for-all">
+                        <div class="row">
+ <!-- Product 1 -->
+<div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+    <div class="ec-product-inner">
+        <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+                <img class="main-image" src="assets/images/product-image/4_1.jpg" alt="Home Item">
+                <img class="hover-image" src="assets/images/product-image/4_2.jpg" alt="Home Item">
+            </a>
+            <div class="ec-pro-actions">
+                <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+            </div>
+        </div>
+        <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Home Decor Cushion</a></h5>
+            <div class="ec-pro-rating">
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star"></i>
+                <i class="ecicon eci-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+    <div class="ec-product-inner">
+        <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+                <img class="main-image" src="assets/images/product-image/4_3.jpg" alt="Home Item">
+                <img class="hover-image" src="assets/images/product-image/4_4.jpg" alt="Home Item">
+            </a>
+            <div class="ec-pro-actions">
+                <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+            </div>
+        </div>
+        <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Luxury Bed Sheet Set</a></h5>
+            <div class="ec-pro-rating">
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star"></i>
+                <i class="ecicon eci-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 3 -->
+<div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+    <div class="ec-product-inner">
+        <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+                <img class="main-image" src="assets/images/product-image/4_5.jpg" alt="Home Item">
+                <img class="hover-image" src="assets/images/product-image/4_6.jpg" alt="Home Item">
+            </a>
+            <div class="ec-pro-actions">
+                <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+            </div>
+        </div>
+        <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Table Lamp Modern Design</a></h5>
+            <div class="ec-pro-rating">
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star"></i>
+                <i class="ecicon eci-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 4 -->
+<div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+    <div class="ec-product-inner">
+        <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+                <img class="main-image" src="assets/images/product-image/4_7.jpg" alt="Home Item">
+                <img class="hover-image" src="assets/images/product-image/4_8.jpg" alt="Home Item">
+            </a>
+            <div class="ec-pro-actions">
+                <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+            </div>
+        </div>
+        <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Wall Hanging Clock</a></h5>
+            <div class="ec-pro-rating">
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star"></i>
+                <i class="ecicon eci-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product 5 -->
+<div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+    <div class="ec-product-inner">
+        <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+                <img class="main-image" src="assets/images/product-image/4_9.jpg" alt="Home Item">
+                <img class="hover-image" src="assets/images/product-image/4_10.jpg" alt="Home Item">
+            </a>
+            <div class="ec-pro-actions">
+                <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+            </div>
+        </div>
+        <div class="ec-pro-content">
+            <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Decorative Flower Vase</a></h5>
+            <div class="ec-pro-rating">
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star fill"></i>
+                <i class="ecicon eci-star"></i>
+                <i class="ecicon eci-star"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section End -->
+</div>
+                    </div>
+                            
+<!-- 🧍‍♂️ ASADIA STORE – MEN COLLECTION -->
+<div class="tab-pane fade show active" id="tab-pro-for-men">
+  <div class="row">
+
+    <!-- Product 1: Men Fragrance -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image">
+          <a href="product-left-sidebar.html" class="image">
+            <img class="main-image" src="assets/images/product-image/men_perfume1.jpg" alt="Men Perfume">
+            <img class="hover-image" src="assets/images/product-image/men_perfume2.jpg" alt="Men Perfume">
+          </a>
+          <div class="ec-pro-actions">
+            <button title="Add To Cart" class="add-to-cart">
+              <i class="fi-rr-shopping-basket"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Asadia Men Luxury Perfume</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2: Men Wear -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image">
+          <a href="product-left-sidebar.html" class="image">
+            <img class="main-image" src="assets/images/product-image/men_jacket1.jpg" alt="Men Jacket">
+            <img class="hover-image" src="assets/images/product-image/men_jacket2.jpg" alt="Men Jacket">
+          </a>
+          <div class="ec-pro-actions">
+            <button title="Add To Cart" class="add-to-cart">
+              <i class="fi-rr-shopping-basket"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Asadia Classic Leather Jacket</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3: Men Shoes -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image">
+          <a href="product-left-sidebar.html" class="image">
+            <img class="main-image" src="assets/images/product-image/men_shoe1.jpg" alt="Men Shoes">
+            <img class="hover-image" src="assets/images/product-image/men_shoe2.jpg" alt="Men Shoes">
+          </a>
+          <div class="ec-pro-actions">
+            <button title="Add To Cart" class="add-to-cart">
+              <i class="fi-rr-shopping-basket"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Asadia Formal Men Shoes</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4: Men Accessories -->
+    <div class="col-lg-3 col-md-6 col-sm-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image">
+          <a href="product-left-sidebar.html" class="image">
+            <img class="main-image" src="assets/images/product-image/men_watch1.jpg" alt="Men Watch">
+            <img class="hover-image" src="assets/images/product-image/men_watch2.jpg" alt="Men Watch">
+          </a>
+          <div class="ec-pro-actions">
+            <button title="Add To Cart" class="add-to-cart">
+              <i class="fi-rr-shopping-basket"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Asadia Classic Wrist Watch</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Winter Collection Section Start -->
+<section class="section ec-offer-section section-space-p" id="winter-collection" style="background:#111;color:white;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12">
+        <div class="ec-offer-content">
+          <h2 class="ec-offer-title text-white">Top New Winter Collection</h2>
+          <p class="text-light mb-3">Get up to 40% off on latest winter wear</p>
+          <a href="shop-left-sidebar-col-3.html" class="btn btn-lg btn-primary">Shop Now</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 text-center">
+        <img src="assets/images/banner/winter-banner.png" alt="Winter Collection" class="img-fluid rounded-3 shadow">
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="ec-product-inner bg-dark p-3 rounded-3">
+          <a href="product-left-sidebar.html"><img src="assets/images/product-image/6_1.jpg" alt="Winter Men Jacket" class="img-fluid rounded"></a>
+          <h5 class="mt-3 text-white">Men’s Winter Jacket</h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-2">View Details</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="ec-product-inner bg-dark p-3 rounded-3">
+          <a href="product-left-sidebar.html"><img src="assets/images/product-image/4_1.jpg" alt="Men Sweater" class="img-fluid rounded"></a>
+          <h5 class="mt-3 text-white">Men’s Wool Sweater</h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-2">View Details</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="ec-product-inner bg-dark p-3 rounded-3">
+          <a href="product-left-sidebar.html"><img src="assets/images/product-image/1_1.jpg" alt="Women Coat" class="img-fluid rounded"></a>
+          <h5 class="mt-3 text-white">Women’s Winter Coat</h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-2">View Details</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="ec-product-inner bg-dark p-3 rounded-3">
+          <a href="product-left-sidebar.html"><img src="assets/images/product-image/3_1.jpg" alt="Kids Winter Wear" class="img-fluid rounded"></a>
+          <h5 class="mt-3 text-white">Kids Winter Wear</h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star"></i>
+            <i class="ecicon eci-star"></i>
+            <i class="ecicon eci-star"></i>
+          </div>
+          <a href="#" class="btn btn-sm btn-outline-light mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Winter Collection Section End -->
+      <!-- ec 2nd Product tab start -->
+<div class="tab-pane fade" id="tab-pro-for-women">
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/w1.jpg" alt="Women's Coat" />
+              <img class="hover-image" src="assets/images/product-image/w1_2.jpg" alt="Women's Coat" />
+            </a>
+            <span class="percentage">30%</span>
+            <span class="flags"><span class="sale">New</span></span>
+            <div class="ec-pro-actions">
+              <button title="Add To Cart" class="add-to-cart">
+                <i class="fi-rr-shopping-basket"></i> Add To Cart
+              </button>
+              <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Women's Winter Coat</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i><i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/w2.jpg" alt="Ladies Handbag" />
+              <img class="hover-image" src="assets/images/product-image/w2_2.jpg" alt="Ladies Handbag" />
+            </a>
+            <span class="flags"><span class="new">Hot</span></span>
+            <div class="ec-pro-actions">
+              <button title="Add To Cart" class="add-to-cart">
+                <i class="fi-rr-shopping-basket"></i> Add To Cart
+              </button>
+              <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Ladies Handbag</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star"></i><i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/w3.jpg" alt="Stylish Heels" />
+              <img class="hover-image" src="assets/images/product-image/w3_2.jpg" alt="Stylish Heels" />
+            </a>
+            <span class="flags"><span class="sale">Sale</span></span>
+            <div class="ec-pro-actions">
+              <button title="Add To Cart" class="add-to-cart">
+                <i class="fi-rr-shopping-basket"></i> Add To Cart
+              </button>
+              <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Stylish Heels</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i><i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/w4.jpg" alt="Smart Watch Rose Gold" />
+              <img class="hover-image" src="assets/images/product-image/w4_2.jpg" alt="Smart Watch Rose Gold" />
+            </a>
+            <span class="flags"><span class="new">New</span></span>
+            <div class="ec-pro-actions">
+              <button title="Add To Cart" class="add-to-cart">
+                <i class="fi-rr-shopping-basket"></i> Add To Cart
+              </button>
+              <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Smart Watch – Rose Gold</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star"></i><i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 shop-all-btn"><a href="shop-left-sidebar-col-3.html">Shop All Collection</a></div>
+  </div>
+</div>
+<!-- ec 2nd Product tab end -->
+      <!-- Asadia Store - For Men Products Section -->
+<div class="tab-pane fade show active" id="tab-pro-for-men">
+  <div class="row">
+
+    <!-- Product 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/men1.jpg" alt="Classic Denim Jacket" />
+              <img class="hover-image" src="assets/images/product-image/men1b.jpg" alt="Classic Denim Jacket" />
+            </a>
+            <span class="flags"><span class="new">New</span></span>
+            <div class="ec-pro-actions">
+              <button title="Add To Cart" class="add-to-cart">
+                <i class="fi-rr-shopping-basket"></i> Add To Cart
+              </button>
+              <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="ec-pro-content">
+          <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Classic Denim Jacket</a></h5>
+          <div class="ec-pro-rating">
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i>
+            <i class="ecicon eci-star fill"></i><i class="ecicon eci-star fill"></i><i class="ecicon eci-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+      <div class="ec-product-inner">
+        <div class="ec-pro-image-outer">
+          <div class="ec-pro-image">
+            <a href="product-left-sidebar.html" class="image">
+              <img class="main-image" src="assets/images/product-image/men2.jpg" alt="Formal Leather Shoes" />
+              <img class="hover-image" src="assets/images/product-image/men2b.jpg" alt="Formal Leather Shoes" />
+            </a>
+            
+<!-- /Asadia Store - For Men Products Section -->
+<!-- Men’s Winter + Summer Collection -->
+<div class="tab-pane fade show active" id="tab-pro-for-men">
+    <div class="row">
+
+        <!-- Product: Winter Jacket -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+            <div class="ec-product-inner">
+                <div class="ec-pro-image-outer">
+                    <div class="ec-pro-image">
+                        <a href="product-left-sidebar.html" class="image">
+                            <img class="main-image" src="assets/images/product-image/men_jacket_1.jpg" alt="Winter Jacket" />
+                            <img class="hover-image" src="assets/images/product-image/men_jacket_2.jpg" alt="Winter Jacket" />
+                        </a>
+                        <span class="flags"><span class="new">Winter</span></span>
+                        <a href="#" class="quickview" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                        <div class="ec-pro-actions">
+                            <a href="#" class="ec-btn-group compare" title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                            <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+                            <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Classic Winter Jacket</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                    <span class="ec-price">
+                        <span class="old-price"></span>
+                        <span class="new-price"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product: Hoodie -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+            <div class="ec-product-inner">
+                <div class="ec-pro-image-outer">
+                    <div class="ec-pro-image">
+                        <a href="product-left-sidebar.html" class="image">
+                            <img class="main-image" src="assets/images/product-image/men_hoodie_1.jpg" alt="Hoodie" />
+                            <img class="hover-image" src="assets/images/product-image/men_hoodie_2.jpg" alt="Hoodie" />
+                        </a>
+                        <span class="flags"><span class="sale">Winter</span></span>
+                        <a href="#" class="quickview" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                        <div class="ec-pro-actions">
+                            <a href="#" class="ec-btn-group compare" title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                            <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+                            <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Casual Warm Hoodie</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                    <span class="ec-price"><span class="new-price"></span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product: Summer Shirt -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+            <div class="ec-product-inner">
+                <div class="ec-pro-image-outer">
+                    <div class="ec-pro-image">
+                        <a href="product-left-sidebar.html" class="image">
+                            <img class="main-image" src="assets/images/product-image/men_shirt_1.jpg" alt="Summer Shirt" />
+                            <img class="hover-image" src="assets/images/product-image/men_shirt_2.jpg" alt="Summer Shirt" />
+                        </a>
+                        <span class="flags"><span class="new">Summer</span></span>
+                        <a href="#" class="quickview" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                        <div class="ec-pro-actions">
+                            <a href="#" class="ec-btn-group compare" title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                            <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+                            <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Linen Summer Shirt</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                    <span class="ec-price"><span class="new-price"></span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product: Sunglasses -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 mb-6 ec-product-content">
+            <div class="ec-product-inner">
+                <div class="ec-pro-image-outer">
+                    <div class="ec-pro-image">
+                        <a href="product-left-sidebar.html" class="image">
+                            <img class="main-image" src="assets/images/product-image/men_glasses_1.jpg" alt="Sunglasses" />
+                            <img class="hover-image" src="assets/images/product-image/men_glasses_2.jpg" alt="Sunglasses" />
+                        </a>
+                        <span class="flags"><span class="new">Summer</span></span>
+                        <a href="#" class="quickview" data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                        <div class="ec-pro-actions">
+                            <a href="#" class="ec-btn-group compare" title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                            <button title="Add To Cart" class="add-to-cart"><i class="fi-rr-shopping-basket"></i> Add To Cart</button>
+                            <a class="ec-btn-group wishlist" title="Wishlist"><i class="fi-rr-heart"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ec-pro-content">
+                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Stylish Sunglasses</a></h5>
+                    <div class="ec-pro-rating">
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star fill"></i>
+                        <i class="ecicon eci-star"></i>
+                    </div>
+                    <span class="ec-price"><span class="new-price"></span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop All -->
+        <div class="col-sm-12 shop-all-btn">
+            <a href="shop-left-sidebar-col-3.html">Shop All Men’s Collection</a>
+        </div>
+    </div>
+</div>
+<!-- /Men’s Collection End -->
+<!-- ec 2nd Product tab start -->
+<div class="tab-pane fade" id="tab-pro-for-women">
+    <div class="row">
+        <!-- Women Products Section Start -->
+        <!-- Winter Section -->
+        <div class="col-12">
+            <h3 class="ec-section-title">Winter Collection (Women)</h3>
+            <div class="ec-winter-products">
+                <!-- Cosmetics -->
+                <div class="ec-category-box">
+                    <h4>Cosmetics</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Wear -->
+                <div class="ec-category-box">
+                    <h4>Wear</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Shoe -->
+                <div class="ec-category-box">
+                    <h4>Shoe</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summer Section -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">Summer Collection (Women)</h3>
+            <div class="ec-summer-products">
+                <!-- Cosmetics -->
+                <div class="ec-category-box">
+                    <h4>Cosmetics</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Wear -->
+                <div class="ec-category-box">
+                    <h4>Wear</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Shoe -->
+                <div class="ec-category-box">
+                    <h4>Shoe</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Women Products Section End -->
+    </div>
+</div>
+<!-- ec 2nd Product tab end -->
+            <!-- ec 3rd Product tab start -->
+<div class="tab-pane fade" id="tab-pro-for-child">
+    <div class="row">
+        <!-- Kids Products Section Start -->
+        <!-- Winter Section -->
+        <div class="col-12">
+            <h3 class="ec-section-title">Winter Collection (Kids)</h3>
+            <div class="ec-winter-products">
+                <!-- Cosmetics -->
+                <div class="ec-category-box">
+                    <h4>Cosmetics</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Wear -->
+                <div class="ec-category-box">
+                    <h4>Wear</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Shoe -->
+                <div class="ec-category-box">
+                    <h4>Shoe</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summer Section -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">Summer Collection (Kids)</h3>
+            <div class="ec-summer-products">
+                <!-- Cosmetics -->
+                <div class="ec-category-box">
+                    <h4>Cosmetics</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Wear -->
+                <div class="ec-category-box">
+                    <h4>Wear</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Shoe -->
+                <div class="ec-category-box">
+                    <h4>Shoe</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Kids Products Section End -->
+    </div>
+</div>
+<!-- ec 3rd Product tab end --!>
+  <!-- ec 4th Product tab start -->
+<div class="tab-pane fade" id="tab-pro-for-home">
+    <div class="row">
+        <!-- Home Collection Section Start -->
+        
+        <!-- Winter Section -->
+        <div class="col-12">
+            <h3 class="ec-section-title">Winter Collection (Home)</h3>
+            <div class="ec-winter-products">
+                <!-- Accessories -->
+                <div class="ec-category-box">
+                    <h4>Accessories</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Bedroom Items -->
+                <div class="ec-category-box">
+                    <h4>Bedroom Items</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summer Section -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">Summer Collection (Home)</h3>
+            <div class="ec-summer-products">
+                <!-- Accessories -->
+                <div class="ec-category-box">
+                    <h4>Accessories</h4>
+                    <p>Coming Soon...</p>
+                </div>
+                <!-- Bedroom Items -->
+                <div class="ec-category-box">
+                    <h4>Bedroom Items</h4>
+                    <p>Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Collection Section End -->
+    </div>
+</div>
+<!-- ec 4th Product tab end -->
+            <!-- ec 5th Product tab start -->
+<div class="tab-pane fade" id="tab-pro-for-books">
+    <div class="row">
+        <!-- Books Collection Section Start -->
+
+        <!-- Islamic Books -->
+        <div class="col-12">
+            <h3 class="ec-section-title">Islamic Books</h3>
+            <div class="ec-book-category">
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- English Story Books -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">English Story Books</h3>
+            <div class="ec-book-category">
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- Knowledge Books -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">Knowledge Books</h3>
+            <div class="ec-book-category">
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- IQ Level Books -->
+        <div class="col-12 mt-4">
+            <h3 class="ec-section-title">IQ Level Books</h3>
+            <div class="ec-book-category">
+                <p>Coming Soon...</p>
+            </div>
+        </div>
+
+        <!-- Books Collection Section End -->
+    </div>
+</div>
+<!-- ec 5th Product tab end -->

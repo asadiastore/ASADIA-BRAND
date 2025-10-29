@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asadia Store — Vendor Dashboard</title>
+    <meta name="keywords" content="asadia store, vendor dashboard, ecommerce, fashion, online store" />
+    <meta name="description" content="Asadia Store vendor dashboard for managing products, orders and settings.">
+    <meta name="author" content="Asadia Store">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/css/vendor/ecicons.min.css" />
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/countdownTimer.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Background -->
+    <link rel="stylesheet" id="bg-switcher-css" href="assets/css/backgrounds/bg-4.css">
+</head>
+
+<body class="shop_page">
+
+    <div id="ec-overlay">
+        <div class="ec-ellipsis">
+            <div></div><div></div><div></div><div></div>
+        </div>
+    </div>
+
+    <!-- Header start -->
+    <header class="ec-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Social -->
+                    <div class="col d-none d-lg-block">
+                        <div class="header-top-social">
+                            <span class="social-text text-upper">Follow us:</span>
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Center Text -->
+                    <div class="col text-center">
+                        <div class="header-top-message text-upper">
+                            <span>Asadia Store</span> — Quality Products Worldwide
+                        </div>
+                    </div>
+
+                    <!-- Right Lang/Currency -->
+                    <div class="col d-none d-lg-block">
+                        <div class="header-top-lan-curr d-flex justify-content-end">
+
+                            <!-- Currency -->
+                            <div class="header-top-curr dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">
+                                    Currency <i class="ecicon eci-caret-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">USD</a></li>
+                                    <li><a href="#">EUR</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Language -->
+                            <div class="header-top-lan dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">
+                                    Language <i class="ecicon eci-caret-down"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a href="#">English</a></li>
+                                    <li><a href="#">Azerbaijani</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Top Message Start -->
+<div class="col text-center header-top-center">
+    <div class="header-top-message text-upper">
+        <span>Asadia Premium Shipping</span> — Free on Orders Over $75
+    </div>
+</div>
+<!-- Header Top Message End -->
+
+<!-- Header Top Language / Currency -->
+<div class="col header-top-right d-none d-lg-block">
+    <div class="header-top-lan-curr d-flex justify-content-end">
+
+        <!-- Currency -->
+        <div class="header-top-curr dropdown">
+            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">
+                Currency <i class="ecicon eci-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item" href="#">USD $</a></li>
+                <li><a class="dropdown-item" href="#">EUR €</a></li>
+            </ul>
+        </div>
+
+        <!-- Language -->
+        <div class="header-top-lan dropdown">
+            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">
+                Language <i class="ecicon eci-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li class="active"><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Azerbaijani</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- End Currency / Language -->
+
+<!-- Header Responsive Buttons -->
+<div class="col d-lg-none">
+    <div class="ec-header-bottons">
+
+        <!-- User -->
+        <div class="ec-header-user dropdown">
+            <button class="dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fi-rr-user"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+            </ul>
+        </div>
+
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+            <div class="header-icon"><i class="fi-rr-heart"></i></div>
+            <span class="ec-header-count">4</span>
+        </a>
+
+        <!-- Cart -->
+        <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+            <div class="header-icon"><i class="fi-rr-shopping-bag"></i></div>
+            <span class="ec-header-count cart-count-lable">3</span>
+        </a>
+
+        <!-- Menu -->
+        <a href="#ec-mobile-menu" class="ec-header-btn ec-side-toggle d-lg-none">
+            <i class="fi fi-rr-menu-burger"></i>
+        </a>
+
+    </div>
+</div>
+<!-- End Responsive -->
+
+</div>
+</div>
+</div>
+<!-- Header Top End -->
+
+<!-- Header Bottom (Desktop) -->
+<div class="ec-header-bottom d-none d-lg-block">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="ec-flex">
+
+                <!-- Logo -->
+                <div class="align-self-center">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo/asadia-logo-light.png" alt="Asadia Logo" />
+                            <img class="dark-logo" src="assets/images/logo/asadia-logo-dark.png" alt="Asadia Logo" style="display:none;" />
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <div class="align-self-center">
+                    <div class="header-search">
+                        <form class="ec-btn-group-form" action="#">
+                            <input class="form-control ec-search-bar" placeholder="Search products..." type="text">
+                            <button class="submit" type="submit">
+                                <i class="fi-rr-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Header Buttons -->
+                <div class="align-self-center">
+                    <div class="ec-header-bottons">
+
+                        <!-- User -->
+                        <div class="ec-header-user dropdown">
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown">
+                                <i class="fi-rr-user"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Wishlist -->
+                        <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                            <div class="header-icon"><i class="fi-rr-heart"></i></div>
+                            <span class="ec-header-count">4</span>
+                        </a>
+
+                        <!-- Cart -->
+                        <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
+                            <div class="header-icon"><i class="fi-rr-shopping-bag"></i></div>
+                            <span class="ec-header-count cart-count-lable">3</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header Bottom End -->
+
+<!-- Header Bottom (Mobile) -->
+<div class="ec-header-bottom d-lg-none">
+    <div class="container position-relative">
+        <div class="row">
+
+            <!-- Logo -->
+            <div class="col">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/asadia-logo-light.png" alt="Asadia Logo" />
+                        <img class="dark-logo" src="assets/images/logo/asadia-logo-dark.png" alt="Asadia Logo" style="display:none;" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="col">
+                <div class="header-search">
+                    <form class="ec-btn-group-form" action="#">
+                        <input class="form-control ec-search-bar" placeholder="Search products..." type="text">
+                        <button class="submit" type="submit"><i class="fi-rr-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Header Bottom Mobile End -->
+      <!-- EC Main Menu Start -->
+<div id="ec-main-menu-desk" class="d-none d-lg-block sticky-nav">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-12 align-self-center">
+
+                <div class="ec-main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+
+                        <!-- Categories -->
+                        <li class="dropdown position-static">
+                            <a href="javascript:void(0)">Categories</a>
+
+                            <ul class="mega-menu d-block">
+                                <li class="d-flex">
+
+                                    <!-- Clothing -->
+                                    <ul class="d-block">
+                                        <li class="menu_title"><a href="#">Clothing</a></li>
+                                        <li><a href="men.html">Men</a></li>
+                                        <li><a href="women.html">Women</a></li>
+                                        <li><a href="kids.html">Kids</a></li>
+                                        <li><a href="winter.html">Winter Collection</a></li>
+                                        <li><a href="summer.html">Summer Collection</a></li>
+                                    </ul>
+
+                                    <!-- Shoes -->
+                                    <ul class="d-block">
+                                        <li class="menu_title"><a href="#">Shoes</a></li>
+                                        <li><a href="sneakers.html">Sneakers</a></li>
+                                        <li><a href="boots.html">Boots</a></li>
+                                        <li><a href="formal-shoes.html">Formals</a></li>
+                                        <li><a href="sandals.html">Sandals</a></li>
+                                    </ul>
+
+                                    <!-- Bags -->
+                                    <ul class="d-block">
+                                        <li class="menu_title"><a href="#">Bags</a></li>
+                                        <li><a href="handbags.html">Handbags</a></li>
+                                        <li><a href="backpacks.html">Backpacks</a></li>
+                                        <li><a href="wallets.html">Wallets</a></li>
+                                        <li><a href="travel-bags.html">Travel Bags</a></li>
+                                    </ul>
+
+                                    <!-- Accessories -->
+                                    <ul class="d-block">
+                                        <li class="menu_title"><a href="#">Accessories</a></li>
+                                        <li><a href="watches.html">Watches</a></li>
+                                        <li><a href="sunglasses.html">Sunglasses</a></li>
+                                        <li><a href="jewellery.html">Jewellery</a></li>
+                                        <li><a href="caps.html">Caps & Hats</a></li>
+                                    </ul>
+
+                                </li>
+
+                                <!-- Banner row -->
+                                <li>
+                                    <ul class="ec-main-banner w-100">
+                                        <li><a href="summer.html"><img src="assets/images/menu-banner/summer.jpg" class="img-responsive" alt=""></a></li>
+                                        <li><a href="winter.html"><img src="assets/images/menu-banner/winter.jpg" class="img-responsive" alt=""></a></li>
+                                        <li><a href="shoes.html"><img src="assets/images/menu-banner/shoes.jpg" class="img-responsive" alt=""></a></li>
+                                        <li><a href="bags.html"><img src="assets/images/menu-banner/bags.jpg" class="img-responsive" alt=""></a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <!-- Products -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="product-left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="product-right-sidebar.html">Right Sidebar</a></li>
+                                <li><a href="product-full-width.html">Full Width</a></li>
+                                <li><a href="product-gallery-full-width.html">Gallery View</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="terms-condition.html">Terms & Conditions</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="track-order.html">Track Order</a></li>
+                                <li><a href="compare.html">Compare</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Vendor -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Vendor</a>
+                            <ul class="sub-menu">
+                                <li><a href="vendor-dashboard.html">Dashboard</a></li>
+                                <li><a href="vendor-profile.html">Profile</a></li>
+                                <li><a href="vendor-uploads.html">Uploads</a></li>
+                                <li><a href="vendor-settings.html">Settings</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Blog -->
+                        <li class="dropdown">
+                            <a href="javascript:void(0)">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-left-sidebar.html">Blog Left</a></li>
+                                <li><a href="blog-right-sidebar.html">Blog Right</a></li>
+                                <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Hot Offers -->
+                        <li><a href="offer.html">Hot Offers</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Language + Social (mobile) -->
+                <div class="header-res-lan-curr">
+
+                    <div class="header-top-lan-curr">
+                        <div class="header-top-lan dropdown">
+                            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language</button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Azerbaijani</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-top-curr dropdown">
+                            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency</button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="#">USD $</a></li>
+                                <li><a class="dropdown-item" href="#">EUR €</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="header-res-social">
+                        <div class="header-top-social">
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Menu End -->
+      <!-- ASADIA CART -->
+<div class="ec-side-cart-overlay"></div>
+<div id="ec-side-cart" class="ec-side-cart">
+    <div class="ec-cart-inner">
+        <div class="ec-cart-top">
+            <div class="ec-cart-title">
+                <span class="cart_title">My Cart</span>
+                <button class="ec-close">×</button>
+            </div>
+
+            <ul class="eccart-pro-items">
+                <li>
+                    <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                        <img src="assets/images/product-image/6_1.jpg" alt="product">
+                    </a>
+                    <div class="ec-pro-content">
+                        <a href="product-left-sidebar.html" class="cart_pro_title">T-shirt For Women</a>
+                        <span class="cart-price"><span>$76.00</span> x 1</span>
+                        <div class="qty-plus-minus">
+                            <input class="qty-input" type="text" value="1" />
+                        </div>
+                        <a href="javascript:void(0)" class="remove">×</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                        <img src="assets/images/product-image/12_1.jpg" alt="product">
+                    </a>
+                    <div class="ec-pro-content">
+                        <a href="product-left-sidebar.html" class="cart_pro_title">Women Leather Shoes</a>
+                        <span class="cart-price"><span>$64.00</span> x 1</span>
+                        <div class="qty-plus-minus">
+                            <input class="qty-input" type="text" value="1" />
+                        </div>
+                        <a href="javascript:void(0)" class="remove">×</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="product-left-sidebar.html" class="sidekka_pro_img">
+                        <img src="assets/images/product-image/3_1.jpg" alt="product">
+                    </a>
+                    <div class="ec-pro-content">
+                        <a href="product-left-sidebar.html" class="cart_pro_title">Girls Nylon Purse</a>
+                        <span class="cart-price"><span>$59.00</span> x 1</span>
+                        <div class="qty-plus-minus">
+                            <input class="qty-input" type="text" value="1" />
+                        </div>
+                        <a href="javascript:void(0)" class="remove">×</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ec-cart-bottom">
+            <div class="cart-sub-total">
+                <table class="table cart-table">
+                    <tbody>
+                        <tr><td>Sub-Total :</td><td class="text-right">$300.00</td></tr>
+                        <tr><td>VAT (20%) :</td><td class="text-right">$60.00</td></tr>
+                        <tr><td>Total :</td><td class="text-right primary-color">$360.00</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart_btn">
+                <a href="cart.html" class="btn btn-primary">View Cart</a>
+                <a href="checkout.html" class="btn btn-secondary">Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ASADIA CART END -->
+
+<!-- Breadcrumb -->
+<div class="sticky-header-next-sec ec-breadcrumb section-space-mb">
+    <div class="container">
+        <div class="row ec_breadcrumb_inner">
+            <div class="col-md-6">
+                <h2 class="ec-breadcrumb-title">Vendor Dashboard</h2>
+            </div>
+            <div class="col-md-6">
+                <ul class="ec-breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Dashboard</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vendor Dashboard -->
+<section class="ec-page-content ec-vendor-dashboard section-space-p">
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="ec-shop-leftside ec-vendor-sidebar col-lg-3 col-md-12">
+                <div class="ec-sidebar-wrap ec-border-box">
+                    <div class="ec-sidebar-block">
+                        <div class="ec-vendor-block">
+                            <div class="ec-vendor-block-bg"></div>
+
+                            <div class="ec-vendor-block-detail">
+                                <img class="v-img" src="assets/images/vendor/default.png" alt="vendor image">
+                                <h5>Asadia Vendor</h5>
+                            </div>
+
+                            <div class="ec-vendor-block-items">
+                                <ul>
+                                    <li><a href="vendor-dashboard.html">Dashboard</a></li>
+                                    <li><a href="vendor-profile.html">Public Profile</a></li>
+                                    <li><a href="vendor-uploads.html">Uploads</a></li>
+                                    <li><a href="track-order.html">Track Shipping</a></li>
+                                    <li><a href="vendor-settings.html">Settings</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="ec-shop-rightside col-lg-9 col-md-12">
+
+                <!-- Stats Cards -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="ec-vendor-dashboard-sort-card color-blue">
+                            <h5>Products</h5><h3>625</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="ec-vendor-dashboard-sort-card color-pink">
+                            <h5>Orders</h5><h3>56 <span>/ Day</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="ec-vendor-dashboard-sort-card color-green">
+                            <h5>Earnings</h5><h3>$56 <span>/ Day</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="ec-vendor-dashboard-sort-card color-orange">
+                            <h5>Sales</h5><h3>550 <span>/ Mo</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest Orders -->
+                <div class="ec-vendor-dashboard-card space-bottom-30">
+                    <div class="ec-vendor-card-header">
+                        <h5>Latest Orders</h5>
+                        <a class="btn btn-lg btn-primary">View All</a>
+                    </div>
+
+                    <div class="ec-vendor-card-body">
+                        <div class="ec-vendor-card-table">
+                            <table class="table ec-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Method</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>225</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/1.jpg"></td>
+                                        <td>Stylish baby shoes</td>
+                                        <td>COD</td>
+                                        <td>Pending</td>
+                                        <td>$320</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>548</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/2.jpg"></td>
+                                        <td>Sweat Pullover Hoodie</td>
+                                        <td>Cash</td>
+                                        <td>Pending</td>
+                                        <td>$214</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>684</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/3.jpg"></td>
+                                        <td>T-shirt for girl</td>
+                                        <td>E-wallet</td>
+                                        <td>On Way</td>
+                                        <td>$548</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>987</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/4.jpg"></td>
+                                        <td>Wool Hat for Men</td>
+                                        <td>Bank Transfer</td>
+                                        <td>Delivered</td>
+                                        <td>$200</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product List -->
+                <div class="ec-vendor-dashboard-card space-bottom-30">
+                    <div class="ec-vendor-card-header">
+                        <h5>Product List</h5>
+                        <div class="ec-header-btn">
+                            <a class="btn btn-lg btn-primary">View All</a>
+                            <a class="btn btn-lg btn-primary">Add</a>
+                        </div>
+                    </div>
+
+                    <div class="ec-vendor-card-body">
+                        <div class="ec-vendor-card-table">
+                            <table class="table ec-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>684</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/3.jpg"></td>
+                                        <td>T-shirt for girl</td>
+                                        <td>$548</td>
+                                        <td>On Way</td>
+                                        <td>$548</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>225</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/1.jpg"></td>
+                                        <td>Stylish baby shoes</td>
+                                        <td>$320</td>
+                                        <td>Pending</td>
+                                        <td>$320</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>987</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/4.jpg"></td>
+                                        <td>Wool hat for men</td>
+                                        <td>$200</td>
+                                        <td>Delivered</td>
+                                        <td>$200</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>548</td>
+                                        <td><img class="prod-img" src="assets/images/product-image/2.jpg"></td>
+                                        <td>Sweat Pullover Hoodie</td>
+                                        <td>$214</td>
+                                        <td>Pending</td>
+                                        <td>$214</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Growth Chart -->
+                <div class="ec-vendor-dashboard-card">
+                    <div class="ec-vendor-card-header">
+                        <h5>Growth Statistics</h5>
+                        <a class="btn btn-lg btn-primary">View All</a>
+                    </div>
+
+                    <div class="ec-vendor-card-body">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+
+            </div><!-- Right Content End -->
+
+        </div>
+    </div>
+</section>
+<!-- Footer Start -->
+<footer class="ec-footer section-space-mt" style="background:#000;">
+    <div class="footer-container">
+
+        <!-- TOP: OFFER / OPTIONAL (kept clean) -->
+        <div class="footer-offer" style="padding:10px 0; background:#111; text-align:center;">
+            <span style="color:#fff;">Special Offers · Free Shipping Available</span>
+        </div>
+
+        <!-- MAIN FOOTER -->
+        <div class="footer-top section-space-footer-p">
+            <div class="container">
+                <div class="row">
+
+                    <!-- ✅ CONTACT -->
+                    <div class="col-sm-12 col-lg-3 ec-footer-contact">
+                        <div class="ec-footer-widget">
+                            <div class="ec-footer-logo">
+                                <a href="#"><img src="assets/images/logo/asadia-footer.png" alt="Asadia Store"></a>
+                            </div>
+                            <h4 class="ec-footer-heading">Contact</h4>
+                            <div class="ec-footer-links">
+                                <ul>
+                                    <li class="ec-footer-link">Aalborg, Denmark</li>
+                                    <li class="ec-footer-link"><span>Call:</span> <a href="tel:+4591783970">+45 91 78 39 70</a></li>
+                                    <li class="ec-footer-link"><span>Email:</span> <a href="mailto:support@asadia.store">support@asadia.store</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ✅ INFORMATION -->
+                    <div class="col-sm-12 col-lg-2 ec-footer-info">
+                        <div class="ec-footer-widget">
+                            <h4 class="ec-footer-heading">Information</h4>
+                            <div class="ec-footer-links">
+                                <ul>
+                                    <li class="ec-footer-link"><a href="about-us.html">About Us</a></li>
+                                    <li class="ec-footer-link"><a href="faq.html">FAQ</a></li>
+                                    <li class="ec-footer-link"><a href="#">Shipping Info</a></li>
+                                    <li class="ec-footer-link"><a href="contact-us.html">Contact Us</a></li>
+                                    <li class="ec-footer-link"><a href="#">Offers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ✅ SERVICES -->
+                    <div class="col-sm-12 col-lg-2 ec-footer-service">
+                        <div class="ec-footer-widget">
+                            <h4 class="ec-footer-heading">Services</h4>
+                            <div class="ec-footer-links">
+                                <ul>
+                                    <li class="ec-footer-link"><a href="#">Returns</a></li>
+                                    <li class="ec-footer-link"><a href="#">Privacy Policy</a></li>
+                                    <li class="ec-footer-link"><a href="#">Customer Support</a></li>
+                                    <li class="ec-footer-link"><a href="terms-condition.html">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ✅ NEWSLETTER -->
+                    <div class="col-sm-12 col-lg-3 ec-footer-news">
+                        <div class="ec-footer-widget">
+                            <h4 class="ec-footer-heading">Newsletter</h4>
+                            <div class="ec-footer-links">
+                                <ul>
+                                    <li class="ec-footer-link">Get updates about products & offers!</li>
+                                </ul>
+                                <div class="ec-subscribe-form">
+                                    <form>
+                                        <div class="ec-form">
+                                            <input class="ec-email" type="email" placeholder="Email address...">
+                                            <button class="button btn-primary" type="submit">
+                                                <i class="ecicon eci-paper-plane-o"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ BOTTOM SECTION -->
+        <div class="footer-bottom" style="background:#111;">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- ✅ SOCIAL ICONS -->
+                    <div class="col footer-bottom-left">
+                        <div class="footer-bottom-social">
+                            <span class="social-text text-upper">Follow us:</span>
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ✅ COPYRIGHT -->
+                    <div class="col text-center footer-copy">
+                        <div class="ec-copy">
+                            © <span id="copyright_year"></span>  
+                            <a class="site-name text-upper" href="index.html">ASADIA STORE</a>  
+                            — All Rights Reserved
+                        </div>
+                    </div>
+
+                    <!-- ✅ PAYMENT ICON -->
+                    <div class="col footer-bottom-right">
+                        <div class="payment-link d-flex justify-content-end">
+                            <img src="assets/images/icons/payment.png" alt="Payments">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- Footer End -->

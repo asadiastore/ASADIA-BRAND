@@ -257,3 +257,77 @@ header, .ec-header {
         font-size: 16px;
     }
 }
+/* =====================================================
+   ASADIA STORE – PREMIUM RED-BLACK THEME
+   (Paste this at very bottom of style.css)
+====================================================== */
+
+:root{
+  --asadia-red: #d6001c;
+  --asadia-red-dark: #980014;
+  --asadia-black-1: #080808;
+  --asadia-black-2: #0f0f0f;
+  --asadia-black-3: #161616;
+}
+
+/* Background gradient (Premium Red-Black) */
+body {
+  background: linear-gradient(180deg, var(--asadia-black-1), var(--asadia-black-2), var(--asadia-black-3));
+  color: #e8e8e8;
+}
+
+/* Header / Footer dark premium */
+.ec-header,
+.ec-footer {
+  background: rgba(0,0,0,0.85);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Cards & Boxes */
+.card, .ec-product-inner, .ec-border-box, .ec-vendor-block {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Titles */
+h1, h2, h3, h4, h5 {
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(180deg, var(--asadia-red), var(--asadia-red-dark));
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(214,0,28,0.25);
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, var(--asadia-red-dark), #6a000e);
+}
+
+/* Prices */
+.ec-price .new-price {
+  color: var(--asadia-red);
+}
+.ec-price .old-price {
+  color: #aaa;
+}
+
+/* Search/Input boxes */
+input, textarea, .form-control {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+/* Links */
+a { color: var(--asadia-red); }
+a:hover { color: var(--asadia-red-dark); }
+
+/* Mobile Optimization */
+@media (max-width: 991px) {
+  body::before, body::after { display: none; }
+}

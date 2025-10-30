@@ -1,333 +1,229 @@
-/* --------------------------------------
-   ASADIA STORE — MAIN STYLE.CSS
-   Colors:
-   Black: #000000
-   White: #ffffff
-   Premium Red: #d6001c
-   -------------------------------------- */
+/* =============================
+   ASADIA STORE - OFFICIAL THEME
+   Clean, Premium, Modern Layout
+   ============================= */
 
-/* Google Font — Ekka uses Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #ffffff;
-    color: #222;
-    line-height: 1.5;
-}
-
-/* --------------------------------------
-   HEADER
--------------------------------------- */
-
-header, .ec-header {
-    background: #000;
-    color: #fff;
-}
-
-.ec-header .navbar-nav li a {
-    color: #fff !important;
-    font-weight: 500;
-}
-
-.ec-header .navbar-nav li a:hover {
-    color: #d6001c !important;
-}
-
-.ec-header-btn i {
-    color: #fff;
-}
-
-/* Logo Fix */
-.ec-header-logo img {
-    max-height: 55px;
-}
-
-/* --------------------------------------
-   BUTTONS
--------------------------------------- */
-
-.btn-primary {
-    background-color: #d6001c;
-    border-color: #d6001c;
-}
-
-.btn-primary:hover {
-    background-color: #b00017;
-    border-color: #b00017;
-}
-
-/* --------------------------------------
-   HERO SLIDER
--------------------------------------- */
-
-.ec-slide-content h2 {
-    font-size: 45px;
-    font-weight: 700;
-    color: #000;
-}
-
-.ec-slide-content h6 {
-    font-size: 18px;
-    color: #444;
-}
-
-.ec-slide-content .btn {
-    margin-top: 15px;
-}
-
-/* --------------------------------------
-   CATEGORY GRID
--------------------------------------- */
-
-.ec-cat-inner {
-    border: 1px solid #eee;
-    padding: 20px;
-    transition: 0.3s ease;
-}
-
-.ec-cat-inner:hover {
-    border-color: #d6001c;
-    transform: translateY(-5px);
-}
-
-.ec-category-title {
-    font-weight: 600;
-    color: #000;
-}
-
-/* --------------------------------------
-   OFFER SECTION
--------------------------------------- */
-
-.ec-offer-section {
-    background: #f7f7f7;
-    padding: 70px 0;
-}
-
-.ec-offer-title {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.ec-offer-stitle {
-    color: #d6001c;
-    font-weight: 600;
-}
-
-/* --------------------------------------
-   INSTAGRAM SECTION
--------------------------------------- */
-
-.ec-instagram .insta-img {
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.ec-instagram .insta-img img {
-    transition: 0.4s ease;
-}
-
-.ec-instagram .insta-img:hover img {
-    transform: scale(1.08);
-}
-
-/* --------------------------------------
-   PRODUCT CARD
--------------------------------------- */
-
-.ec-product-inner {
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.ec-product-inner:hover {
-    border-color: #d6001c;
-    transform: translateY(-5px);
-}
-
-.ec-price .new-price {
-    color: #d6001c;
-    font-weight: 600;
-}
-
-.ec-price .old-price {
-    text-decoration: line-through;
-    color: #888;
-}
-
-/* --------------------------------------
-   FOOTER — CUSTOM ASADIA FOOTER
--------------------------------------- */
-
-.ec-footer {
-    background: #000;
-    color: #fff;
-    padding-top: 50px;
-}
-
-.ec-footer-heading {
-    color: #d6001c;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.ec-footer-link a {
-    color: #ccc;
-    font-size: 14px;
-}
-
-.ec-footer-link a:hover {
-    color: #fff;
-}
-
-.ec-footer-contact p,
-.ec-footer-contact li {
-    color: #ddd;
-}
-
-/* Social icons */
-.footer-bottom-social i {
-    font-size: 20px;
-    transition: 0.2s;
-}
-
-.footer-bottom-social i:hover {
-    color: #d6001c;
-}
-
-/* Footer bottom */
-.footer-bottom {
-    background: #111;
-    padding: 15px 0;
-}
-
-.ec-copy {
-    color: #aaa;
-}
-
-.ec-copy a {
-    color: #d6001c;
-    font-weight: 600;
-}
-
-/* --------------------------------------
-   PAYMENT ICONS
--------------------------------------- */
-
-.footer-bottom-payment img {
-    max-height: 30px;
-}
-
-/* --------------------------------------
-   RESPONSIVE
--------------------------------------- */
-
-@media (max-width: 992px) {
-    .ec-slide-content h2 {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 768px) {
-    .ec-slide-content h2 {
-        font-size: 28px;
-    }
-
-    .ec-offer-title {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .ec-header-logo img {
-        max-height: 45px;
-    }
-
-    .ec-footer-heading {
-        font-size: 16px;
-    }
-}
-/* =====================================================
-   ASADIA STORE – PREMIUM RED-BLACK THEME
-   (Paste this at very bottom of style.css)
-====================================================== */
-
+/* --- THEME VARIABLES --- */
 :root{
-  --asadia-red: #d6001c;
-  --asadia-red-dark: #980014;
-  --asadia-black-1: #080808;
-  --asadia-black-2: #0f0f0f;
-  --asadia-black-3: #161616;
+  --primary:#d90429;      /* ASADIA Red */
+  --dark:#000000;         /* Jet Black */
+  --text:#111111;
+  --muted:#6b7280;
+  --white:#ffffff;
+  --bg:#f7f7f7;           
+  --card:#ffffff;
+  --radius:12px;
+  --font:"Poppins", Arial, sans-serif;
+  --max-width:1250px;
 }
 
-/* Background gradient (Premium Red-Black) */
-body {
-  background: linear-gradient(180deg, var(--asadia-black-1), var(--asadia-black-2), var(--asadia-black-3));
-  color: #e8e8e8;
+/* --- GLOBAL RESET --- */
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{
+  font-family:var(--font);
+  background:#f5f5f5;
+  background-image:url('../images/background.jpg');  
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.45;
+  font-size:15px;
 }
 
-/* Header / Footer dark premium */
-.ec-header,
-.ec-footer {
-  background: rgba(0,0,0,0.85);
-  border-top: 1px solid rgba(255,255,255,0.05);
+/* =============================
+   LAYOUT / CONTAINER
+   ============================= */
+.container{
+  width:100%;
+  margin:0 auto;
+  max-width:var(--max-width);
+  padding:0 18px;
 }
 
-/* Cards & Boxes */
-.card, .ec-product-inner, .ec-border-box, .ec-vendor-block {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.06);
-  color: #fff;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+.section{
+  padding:45px 0;
 }
 
-/* Titles */
-h1, h2, h3, h4, h5 {
-  color: #fff;
-  text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+.section .row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:22px;
 }
 
-/* Buttons */
-.btn-primary {
-  background: linear-gradient(180deg, var(--asadia-red), var(--asadia-red-dark));
-  border-color: transparent;
-  color: #fff;
-  box-shadow: 0 6px 18px rgba(214,0,28,0.25);
-}
-.btn-primary:hover {
-  background: linear-gradient(180deg, var(--asadia-red-dark), #6a000e);
+/* =============================
+   TYPOGRAPHY
+   ============================= */
+h1,h2,h3,h4,h5,h6{color:var(--dark);font-weight:700;}
+p{color:var(--muted);}
+
+.brand-title{
+  font-size:34px;
+  font-weight:800;
+  letter-spacing:1px;
+  color:var(--dark);
 }
 
-/* Prices */
-.ec-price .new-price {
-  color: var(--asadia-red);
-}
-.ec-price .old-price {
-  color: #aaa;
+.sub-title{
+  font-size:14px;
+  margin-top:4px;
+  color:var(--muted);
 }
 
-/* Search/Input boxes */
-input, textarea, .form-control {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.05);
-  color: #fff;
+.ec-title{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:var(--primary);
 }
 
-/* Links */
-a { color: var(--asadia-red); }
-a:hover { color: var(--asadia-red-dark); }
+.ec-bg-title{
+  font-size:60px;
+  opacity:.05;
+  font-weight:900;
+  margin-bottom:-20px;
+}
 
-/* Mobile Optimization */
-@media (max-width: 991px) {
-  body::before, body::after { display: none; }
+/* =============================
+   NAVBAR
+   ============================= */
+nav.navbar{
+  padding:14px 0;
+  background:#ffffffd9;
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid #eee;
+}
+.navbar-brand img{
+  height:48px;
+}
+
+/* =============================
+   CARDS
+   ============================= */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  border:1px solid #e5e5e5;
+  transition:.25s ease;
+  overflow:hidden;
+  backdrop-filter:blur(4px);
+}
+.card img{
+  width:100%;
+  display:block;
+}
+.card-body{
+  padding:15px;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 26px rgba(0,0,0,0.12);
+}
+
+/* =============================
+   BUTTONS
+   ============================= */
+.btn-primary{
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.25s ease;
+}
+.btn-primary:hover{
+  background:#b80322;
+  transform:translateY(-2px);
+}
+
+.btn-outline{
+  border:2px solid var(--primary);
+  background:transparent;
+  color:var(--primary);
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:600;
+  transition:.25s ease;
+}
+.btn-outline:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+/* =============================
+   BANNER
+   ============================= */
+.big-banner{
+  width:100%;
+  height:330px;
+  background-size:cover;
+  background-position:center;
+  border-radius:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.18);
+}
+@media(max-width:768px){
+  .big-banner{height:200px;}
+}
+
+/* =============================
+   FORMS + INPUTS
+   ============================= */
+input, textarea, select{
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  font-size:14px;
+  margin-top:6px;
+}
+input:focus, textarea:focus{
+  border-color:var(--primary);
+  outline:none;
+  box-shadow:0 0 0 2px rgba(217,4,41,0.15);
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+footer{
+  background:#000;
+  color:#fff;
+  padding:45px 0;
+  margin-top:40px;
+}
+
+footer a{color:#ccc;}
+footer a:hover{color:var(--primary);}
+
+.footer-title{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:14px;
+  color:#fff;
+}
+
+footer p{
+  color:#d4d4d4;
+  margin:6px 0;
+}
+
+.footer-copy{
+  text-align:center;
+  margin-top:25px;
+  padding-top:18px;
+  border-top:1px solid #333;
+  color:#777;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+@media(max-width:576px){
+  .brand-title{font-size:24px;}
+  .ec-title{font-size:22px;}
+  .ec-bg-title{font-size:40px;}
 }

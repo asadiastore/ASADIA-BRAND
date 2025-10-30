@@ -10,7 +10,6 @@
   --text:#111111;
   --muted:#6b7280;
   --white:#ffffff;
-  --bg:#f5f5f5;           /* Light grey texture base */
   --card:#ffffff;
   --radius:12px;
   --font:"Poppins", Arial, sans-serif;
@@ -18,15 +17,18 @@
 }
 
 /* --- GLOBAL RESET --- */
-*{box-sizing:border-box;margin:0;padding:0;}
+*{margin:0;padding:0;box-sizing:border-box;}
 html,body{height:100%;}
+
 body{
   font-family:var(--font);
-  background:var(--bg);
   color:var(--text);
-  -webkit-font-smoothing:antialiased;
   line-height:1.45;
   font-size:15px;
+
+  /* ✅ YOUR BACKGROUND IMAGE */
+  background:url("../images/bg.jpg") no-repeat center center fixed;
+  background-size:cover;
 }
 
 /* =============================
@@ -52,7 +54,11 @@ body{
 /* =============================
    TYPOGRAPHY
    ============================= */
-h1,h2,h3,h4,h5,h6{color:var(--dark);font-weight:700;}
+h1,h2,h3,h4,h5,h6{
+  color:var(--dark);
+  font-weight:700;
+}
+
 p{color:var(--muted);}
 
 /* Hero Titles */
@@ -60,16 +66,16 @@ p{color:var(--muted);}
   font-size:34px;
   font-weight:800;
   letter-spacing:1px;
-  color:var(--dark);
+  color:var(--white);
+  text-shadow:0 2px 4px rgba(0,0,0,0.4);
 }
 
 .sub-title{
   font-size:14px;
   margin-top:4px;
-  color:var(--muted);
+  color:#dddddd;
 }
 
-/* Section Title */
 .ec-title{
   font-size:26px;
   font-weight:700;
@@ -79,7 +85,7 @@ p{color:var(--muted);}
 
 .ec-bg-title{
   font-size:60px;
-  opacity:.05;
+  opacity:.08;
   font-weight:900;
   margin-bottom:-20px;
 }
@@ -89,9 +95,11 @@ p{color:var(--muted);}
    ============================= */
 nav.navbar{
   padding:14px 0;
-  background:#ffffff;
-  border-bottom:1px solid #eee;
+  background:rgba(0,0,0,0.45);     /* ✅ Transparent black */
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.08);
 }
+
 .navbar-brand img{
   height:48px;
 }
@@ -100,23 +108,26 @@ nav.navbar{
    CARDS
    ============================= */
 .card{
-  background:var(--card);
+  background:rgba(255,255,255,0.85);
   border-radius:var(--radius);
-  border:1px solid #e5e5e5;
+  border:1px solid rgba(255,255,255,0.2);
+  backdrop-filter:blur(4px);
   transition:.25s ease;
   overflow:hidden;
 }
+
 .card img{
   width:100%;
   display:block;
 }
+
 .card-body{
   padding:15px;
 }
 
 .card:hover{
   transform:translateY(-6px);
-  box-shadow:0 10px 26px rgba(0,0,0,0.12);
+  box-shadow:0 10px 26px rgba(0,0,0,0.15);
 }
 
 /* =============================
@@ -132,12 +143,12 @@ nav.navbar{
   cursor:pointer;
   transition:.25s ease;
 }
+
 .btn-primary:hover{
   background:#b80322;
   transform:translateY(-2px);
 }
 
-/* Outline Button */
 .btn-outline{
   border:2px solid var(--primary);
   background:transparent;
@@ -147,6 +158,7 @@ nav.navbar{
   font-weight:600;
   transition:.25s ease;
 }
+
 .btn-outline:hover{
   background:var(--primary);
   color:#fff;
@@ -162,6 +174,7 @@ nav.navbar{
   background-position:center;
   border-radius:14px;
 }
+
 @media(max-width:768px){
   .big-banner{height:200px;}
 }
@@ -191,7 +204,6 @@ footer p{
   margin:6px 0;
 }
 
-/* Copyright */
 .footer-copy{
   text-align:center;
   margin-top:25px;

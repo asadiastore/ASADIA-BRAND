@@ -98,6 +98,17 @@ nav.navbar{
 .navbar-brand img{
   height:48px;
 }
+.asadia-logo{
+    height: 65px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(214,0,28,0.55));
+    transition: .3s ease;
+}
+
+.asadia-logo:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 14px rgba(214,0,28,0.75));
+}
 
 /* =============================
    CARDS

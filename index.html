@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asadia Store – Shop Everything</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32">
+
+    <!-- Google Font (Poppins – Temu Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/ecicons.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Temu Theme Override -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+
+        :root {
+            --asadia-red: #cc0000;
+        }
+
+        .primary-color,
+        .btn-primary,
+        .section-title h2,
+        .temu-title {
+            color: var(--asadia-red) !important;
+        }
+
+        .btn-primary,
+        .header-logo-text,
+        .temu-cat-box:hover {
+            background: var(--asadia-red) !important;
+            border-color: var(--asadia-red) !important;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- ================= HEADER START (TEMU STYLE) ================= -->
+
+<header class="asadia-header">
+
+    <!-- Top Logo + Icons -->
+    <div class="header-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/asadia-logo.png" alt="Asadia Store">
+                </a>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="header-icons">
+                <a href="wishlist.html" class="icon-btn"><i class="fi-rr-heart"></i></a>
+                <a href="cart.html" class="icon-btn"><i class="fi-rr-shopping-basket"></i></a>
+                <a class="icon-btn d-lg-none" id="mobile-menu-toggle">
+                    <i class="fi-rr-menu-burger"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- HEADER BOTTOM (Desktop Categories + Search + Icons) -->
+    <div class="header-bottom d-none d-lg-block">
+        <div class="container">
+
+            <div class="header-bottom-inner">
+
+                <!-- All Categories Button -->
+                <div class="all-categories-btn">
+                    <i class="fi-rr-apps"></i> All Shops
+                </div>
+
+                <!-- Search -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Products...">
+                    <button><i class="fi-rr-search"></i></button>
+                </div>
+
+                <!-- Right Side Icons -->
+                <div class="header-right-icons">
+                    <a href="#"><i class="fi-rr-user"></i></a>
+                    <a href="#"><i class="fi-rr-shuffle"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ALL 16 SHOPS DROPDOWN -->
+    <div class="all-shops-dropdown">
+        <ul>
+            <li><a href="women.html">Women Fashion</a></li>
+            <li><a href="men.html">Men Fashion</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="bags.html">Bags</a></li>
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="smartwatch.html">Smart Watches</a></li>
+            <li><a href="beauty.html">Beauty</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="home.html">Home Items</a></li>
+            <li><a href="toys.html">Toys</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="automobile.html">Automobile</a></li>
+            <li><a href="winter.html">Winter Collection</a></li>
+        </ul>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <i class="fi-rr-cross-small" id="mobile-menu-close"></i>
+        </div>
+
+        <ul class="mobile-menu-list">
+            <li><a href="women.html">Women Fashion</a></li>
+            <li><a href="men.html">Men Fashion</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="bags.html">Bags</a></li>
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="smartwatch.html">Smart Watches</a></li>
+            <li><a href="beauty.html">Beauty</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="home.html">Home Items</a></li>
+            <li><a href="toys.html">Toys</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="automobile.html">Automobile</a></li>
+            <li><a href="winter.html">Winter Collection</a></li>
+        </ul>
+    </div>
+
+</header>
+
+<!-- ================= HEADER END ================= -->
+  <!-- ✅ ================= MAIN SLIDER START ================= -->
+
+<section class="asadia-main-slider">
+    <div class="swiper mainSwiper">
+
+        <div class="swiper-wrapper">
+
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide">
+                <div class="asadia-slide-box">
+                    <img src="assets/images/slider/slide1.jpg" alt="">
+                    <div class="slider-text">
+                        <h2>Big Discount Deals</h2>
+                        <p>Up to 70% OFF • Limited Time</p>
+                        <a href="#" class="slide-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide">
+                <div class="asadia-slide-box">
+                    <img src="assets/images/slider/slide2.jpg" alt="">
+                    <div class="slider-text">
+                        <h2>New Fashion Arrivals</h2>
+                        <p>Fresh & Trendy Collections</p>
+                        <a href="#" class="slide-btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="swiper-slide">
+                <div class="asadia-slide-box">
+                    <img src="assets/images/slider/slide3.jpg" alt="">
+                    <div class="slider-text">
+                        <h2>Smart Gadgets Sale</h2>
+                        <p>Best Electronics at Low Price</p>
+                        <a href="#" class="slide-btn">Check Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+
+        <!-- Arrows -->
+        <div class="swiper-buttons">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅ ================= MAIN SLIDER END ================= -->
+<!-- ✅ =============== FEATURED CATEGORIES (TEMU STYLE) START =============== -->
+
+<section class="asadia-featured-categories section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center mb-4">
+            <h2 class="temu-title">Featured Categories</h2>
+        </div>
+
+        <!-- Temu Category Grid -->
+        <div class="row temu-feature-grid">
+
+            <!-- Box 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-cat-box">
+                <a href="#">
+                    <div class="temu-cat-img">
+                        <img src="assets/images/category-image/1.jpg" alt="">
+                    </div>
+                    <p class="temu-cat-text">Men’s Fashion</p>
+                </a>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-cat-box">
+                <a href="#">
+                    <div class="temu-cat-img">
+                        <img src="assets/images/category-image/2.jpg" alt="">
+                    </div>
+                    <p class="temu-cat-text">Women’s Fashion</p>
+                </a>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-cat-box">
+                <a href="#">
+                    <div class="temu-cat-img">
+                        <img src="assets/images/category-image/3.jpg" alt="">
+                    </div>
+                    <p class="temu-cat-text">Electronics</p>
+                </a>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-cat-box">
+                <a href="#">
+                    <div class="temu-cat-img">
+                        <img src="assets/images/category-image/4.jpg" alt="">
+                    </div>
+                    <p class="temu-cat-text">Shoes</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅ =============== FEATURED CATEGORIES END =============== -->
+  
+<!-- ✅============== PRODUCT TABS AREA START (TEMU STYLE) ==============-->
+
+<section class="asadia-product-tabs section-space-p">
+    <div class="container">
+
+        <!-- Tabs Header -->
+        <ul class="nav nav-tabs temu-tabs" role="tablist">
+
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#new" role="tab">New Arrivals</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#best" role="tab">Best Sellers</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#popular" role="tab">Popular</a>
+            </li>
+
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content temu-tab-content">
+
+            <!-- ✅ TAB 1 — NEW ARRIVALS -->
+            <div class="tab-pane fade show active" id="new" role="tabpanel">
+                <div class="row">
+
+                    <!-- Product 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/1.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Wireless Earbuds</p>
+                        <p class="temu-product-price">$18.00</p>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/2.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Men's Jacket</p>
+                        <p class="temu-product-price">$24.00</p>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/3.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Smart Watch</p>
+                        <p class="temu-product-price">$29.00</p>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/4.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Women’s Shoes</p>
+                        <p class="temu-product-price">$15.00</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ✅ TAB 2 — BEST SELLERS -->
+            <div class="tab-pane fade" id="best" role="tabpanel">
+                <div class="row">
+
+                    <!-- Product box copy-paste same structure -->
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/5.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Gaming Mouse</p>
+                        <p class="temu-product-price">$12.00</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ✅ TAB 3 — POPULAR PRODUCTS -->
+            <div class="tab-pane fade" id="popular" role="tabpanel">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                        <div class="temu-product-img">
+                            <img src="assets/images/product-images/6.jpg" alt="">
+                        </div>
+                        <p class="temu-product-title">Bluetooth Speaker</p>
+                        <p class="temu-product-price">$22.00</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅============== PRODUCT TABS AREA END ==============-->
+  <!-- ✅============== TEMU STYLE – 16 SHOPS START ==============-->
+
+<section class="temu-16shops section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="temu-title">Shop by Categories</h2>
+        </div>
+
+        <!-- Temu Grid 16 shops -->
+        <div class="row temu-grid">
+
+            <!-- SHOP 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/1.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Men's Fashion</div>
+                </a>
+            </div>
+
+            <!-- SHOP 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/2.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Women's Clothing</div>
+                </a>
+            </div>
+
+            <!-- SHOP 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/3.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Kids Fashion</div>
+                </a>
+            </div>
+
+            <!-- SHOP 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/4.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Electronics</div>
+                </a>
+            </div>
+
+            <!-- SHOP 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/5.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Shoes</div>
+                </a>
+            </div>
+
+            <!-- SHOP 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/6.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Watches</div>
+                </a>
+            </div>
+
+            <!-- SHOP 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/7.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Bags</div>
+                </a>
+            </div>
+
+            <!-- SHOP 8 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/8.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Beauty</div>
+                </a>
+            </div>
+
+            <!-- SHOP 9 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/9.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Kitchen</div>
+                </a>
+            </div>
+
+            <!-- SHOP 10 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/10.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Home Items</div>
+                </a>
+            </div>
+
+            <!-- SHOP 11 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/11.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Sports</div>
+                </a>
+            </div>
+
+            <!-- SHOP 12 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/12.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Gaming</div>
+                </a>
+            </div>
+
+            <!-- SHOP 13 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/13.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Jewelry</div>
+                </a>
+            </div>
+
+            <!-- SHOP 14 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/14.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Toys</div>
+                </a>
+            </div>
+
+            <!-- SHOP 15 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/15.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Automobile</div>
+                </a>
+            </div>
+
+            <!-- SHOP 16 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-box">
+                <a href="#">
+                    <div class="temu-img-box">
+                        <img src="assets/images/shops/16.jpg" alt="">
+                    </div>
+                    <div class="temu-text">Winter Collection</div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅============== TEMU STYLE – 16 SHOPS END ==============-->
+  <!-- ✅============== FLASH DEALS PROMO BANNER (TEMU STYLE) ==============-->
+
+<section class="flash-promo-banner section-space-p">
+    <div class="container">
+
+        <div class="flash-banner-box">
+            <img src="assets/images/banners/flash-deal.jpg" alt="Flash Deal Banner" class="flash-banner-img">
+
+            <div class="flash-banner-text">
+                <h2>🔥 Flash Deals</h2>
+                <p>Limited Time • Up to 70% OFF</p>
+                <a href="#" class="flash-btn">Shop Now</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅============== FLASH DEALS PROMO BANNER END ==============-->
+
+<!-- ✅============== FEATURED & SPECIAL OFFERS (TEMU STYLE) ==============-->
+
+<section class="special-offers section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="temu-title">Special Offers</h2>
+            <p class="temu-sub">Hot Picks • Best Prices • Limited Time Deals</p>
+        </div>
+
+        <!-- Grid -->
+        <div class="row temu-offer-grid">
+
+            <!-- Offer Box 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-offer-box">
+                <a href="#">
+                    <div class="offer-img">
+                        <img src="assets/images/offers/offer1.jpg" alt="">
+                    </div>
+                    <div class="offer-content">
+                        <p class="offer-title">Smart Watch</p>
+                        <p class="offer-price">₼29.99 <span class="old">₼59.99</span></p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Offer Box 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-offer-box">
+                <a href="#">
+                    <div class="offer-img">
+                        <img src="assets/images/offers/offer2.jpg" alt="">
+                    </div>
+                    <div class="offer-content">
+                        <p class="offer-title">Women Sneakers</p>
+                        <p class="offer-price">₼19.99 <span class="old">₼39.99</span></p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Offer Box 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-offer-box">
+                <a href="#">
+                    <div class="offer-img">
+                        <img src="assets/images/offers/offer3.jpg" alt="">
+                    </div>
+                    <div class="offer-content">
+                        <p class="offer-title">Kids Toys</p>
+                        <p class="offer-price">₼9.99 <span class="old">₼19.99</span></p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Offer Box 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-offer-box">
+                <a href="#">
+                    <div class="offer-img">
+                        <img src="assets/images/offers/offer4.jpg" alt="">
+                    </div>
+                    <div class="offer-content">
+                        <p class="offer-title">Bluetooth Earbuds</p>
+                        <p class="offer-price">₼14.99 <span class="old">₼29.99</span></p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅============== FEATURED & SPECIAL OFFERS END ==============-->
+
+<!-- ✅================ TOP VENDOR SECTION (TEMU STYLE) ================= -->
+
+<section class="top-vendors section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="temu-title">Top Vendors</h2>
+            <p class="temu-sub">Our trusted & best-selling sellers</p>
+        </div>
+
+        <!-- Vendor Grid -->
+        <div class="row vendor-grid">
+
+            <!-- Vendor 1 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="vendor-multi.html" target="_blank">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v1.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Mall</p>
+                </a>
+            </div>
+
+            <!-- Vendor 2 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="vendor-1.html" target="_blank">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v2.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Fashion</p>
+                </a>
+            </div>
+
+            <!-- Vendor 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="#">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v3.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Shoes</p>
+                </a>
+            </div>
+
+            <!-- Vendor 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="#">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v4.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Kids</p>
+                </a>
+            </div>
+
+            <!-- Vendor 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="#">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v5.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Electronics</p>
+                </a>
+            </div>
+
+            <!-- Vendor 6 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 vendor-box">
+                <a href="#">
+                    <div class="vendor-img">
+                        <img src="assets/images/vendor/v6.png" alt="">
+                    </div>
+                    <p class="vendor-name">Asadia Deals</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================ TOP VENDOR SECTION END ================= -->
+<!-- ✅=============== SERVICES SECTION (TEMU STYLE) =============== -->
+
+<section class="asadia-services section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="temu-title">Our Services</h2>
+        </div>
+
+        <div class="row services-grid">
+
+            <!-- Service 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 service-box">
+                <div class="service-inner">
+                    <img src="assets/images/icons/free-shipping.png" alt="">
+                    <h4>Free Shipping</h4>
+                    <p>Fast & secure delivery</p>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 service-box">
+                <div class="service-inner">
+                    <img src="assets/images/icons/secure-payment.png" alt="">
+                    <h4>Secure Payment</h4>
+                    <p>COD + Online payment</p>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 service-box">
+                <div class="service-inner">
+                    <img src="assets/images/icons/return.png" alt="">
+                    <h4>Easy Returns</h4>
+                    <p>7 days return policy</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6 service-box">
+                <div class="service-inner">
+                    <img src="assets/images/icons/support.png" alt="">
+                    <h4>24/7 Support</h4>
+                    <p>We are here to help</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅=============== SERVICES SECTION END =============== -->
+  <!-- ✅================= OFFER / PROMO BANNER (TEMU STYLE) ================= -->
+
+<section class="asadia-offer-banner section-space-p">
+    <div class="container">
+        <div class="offer-banner-box">
+
+            <img src="assets/images/banner/promo.jpg" alt="Offer Banner" class="offer-img">
+
+            <div class="offer-content">
+                <h2>🔥 Mega Discount Offer!</h2>
+                <p>Get up to <strong>70% OFF</strong> on selected items.</p>
+                <a href="#" class="btn btn-primary">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ✅================= OFFER / PROMO BANNER END ================= -->
+  
+<!-- ✅================= NEW PRODUCTS (TEMU STYLE) ================= -->
+
+<section class="asadia-new-products section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">🆕 New Arrivals</h2>
+            <p class="sub-title">Fresh picks just for you</p>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row">
+
+            <!-- PRODUCT 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/1.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Casual Men's Shirt</p>
+                        <p class="p-price">$12.99</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/2.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Women's Sneakers</p>
+                        <p class="p-price">$18.49</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/3.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Smart Watch Series 9</p>
+                        <p class="p-price">$24.99</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/4.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Kids T-Shirt</p>
+                        <p class="p-price">$6.50</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================= NEW PRODUCTS END ================= -->
+  <!-- ✅================= NEW PRODUCT CONTENT (TEMU STYLE GRID 2) ================= -->
+
+<section class="asadia-new-products-extended section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">✨ Special New Picks</h2>
+            <p class="sub-title">Hand-picked products just uploaded!</p>
+        </div>
+
+        <div class="row">
+
+            <!-- PRODUCT BOX -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/p1.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Women Stylish Bag</p>
+                        <p class="p-price">$14.99</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT BOX -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/p2.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Bluetooth Earbuds</p>
+                        <p class="p-price">$9.49</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT BOX -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/p3.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Kids Winter Cap</p>
+                        <p class="p-price">$4.29</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PRODUCT BOX -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 temu-product-box">
+                <a href="#">
+                    <div class="temu-product-img">
+                        <img src="assets/images/products/p4.jpg" alt="">
+                    </div>
+                    <div class="temu-product-info">
+                        <p class="p-name">Men Running Shoes</p>
+                        <p class="p-price">$19.90</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================= NEW PRODUCT CONTENT END ================= -->
+
+<!-- ✅================= CUSTOMER TESTIMONIALS (TEMU STYLE) ================= -->
+
+<section class="asadia-testimonials section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="sub-title">What buyers say about our products</p>
+        </div>
+
+        <!-- Slider -->
+        <div class="swiper asadia-testimonial-slider">
+            <div class="swiper-wrapper">
+
+                <!-- Review 1 -->
+                <div class="swiper-slide testi-box">
+                    <div class="testi-content">
+                        <p class="testi-text">
+                            “Excellent quality! Same as shown. Fast delivery, will order again!”
+                        </p>
+                        <div class="testi-user">
+                            <img src="assets/images/testimonial/u1.jpg" alt="">
+                            <div>
+                                <h4>Sarah K.</h4>
+                                <span>Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="swiper-slide testi-box">
+                    <div class="testi-content">
+                        <p class="testi-text">
+                            “Product quality is amazing for this price! Highly recommended.”
+                        </p>
+                        <div class="testi-user">
+                            <img src="assets/images/testimonial/u2.jpg" alt="">
+                            <div>
+                                <h4>Ali R.</h4>
+                                <span>Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="swiper-slide testi-box">
+                    <div class="testi-content">
+                        <p class="testi-text">
+                            “Good packaging & fast shipping. Loved the shoes!”
+                        </p>
+                        <div class="testi-user">
+                            <img src="assets/images/testimonial/u3.jpg" alt="">
+                            <div>
+                                <h4>Mariya L.</h4>
+                                <span>Verified Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================= TESTIMONIAL SECTION END ================= -->
+  <!-- ✅================= BRAND LOGO SECTION ================= -->
+
+<section class="asadia-brands section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">Our Brands</h2>
+            <p class="sub-title">Top trusted brands we work with</p>
+        </div>
+
+        <!-- Slider -->
+        <div class="swiper asadia-brand-slider">
+            <div class="swiper-wrapper">
+
+                <!-- Brand 1 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/1.png" alt="Brand">
+                </div>
+
+                <!-- Brand 2 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/2.png" alt="Brand">
+                </div>
+
+                <!-- Brand 3 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/3.png" alt="Brand">
+                </div>
+
+                <!-- Brand 4 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/4.png" alt="Brand">
+                </div>
+
+                <!-- Brand 5 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/5.png" alt="Brand">
+                </div>
+
+                <!-- Brand 6 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/6.png" alt="Brand">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================= BRAND LOGO SECTION END ================= -->
+<!-- ✅================= BRAND LOGO SECTION ================= -->
+
+<section class="asadia-brands section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">Our Brands</h2>
+            <p class="sub-title">Top trusted brands we work with</p>
+        </div>
+
+        <!-- Slider -->
+        <div class="swiper asadia-brand-slider">
+            <div class="swiper-wrapper">
+
+                <!-- Brand 1 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/1.png" alt="Brand">
+                </div>
+
+                <!-- Brand 2 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/2.png" alt="Brand">
+                </div>
+
+                <!-- Brand 3 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/3.png" alt="Brand">
+                </div>
+
+                <!-- Brand 4 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/4.png" alt="Brand">
+                </div>
+
+                <!-- Brand 5 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/5.png" alt="Brand">
+                </div>
+
+                <!-- Brand 6 -->
+                <div class="swiper-slide brand-box">
+                    <img src="assets/images/brands/6.png" alt="Brand">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅================= BRAND LOGO SECTION END ================= -->
+  <!-- ✅============= INSTAGRAM GALLERY START (Temu Style) ============= -->
+<section class="asadia-instagram section-space-p">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row text-center">
+            <h2 class="section-title">Follow Us on Instagram</h2>
+            <p class="sub-title">@asadia.store</p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="row asadia-instagram-grid">
+
+            <!-- Post 1 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/1.jpg" alt="insta">
+                </a>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/2.jpg" alt="insta">
+                </a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/3.jpg" alt="insta">
+                </a>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/4.jpg" alt="insta">
+                </a>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/5.jpg" alt="insta">
+                </a>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 insta-box">
+                <a href="#">
+                    <img src="assets/images/instagram/6.jpg" alt="insta">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ✅============= INSTAGRAM GALLERY END ============= -->
+<!-- ✅=============== FOOTER START =============== -->
+<footer class="asadia-footer section-space-p">
+    <div class="container">
+
+        <div class="row">
+
+            <!-- ABOUT -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-box">
+                <h4>About Asadia Store</h4>
+                <p>Best quality products at affordable prices. Secure shopping, fast delivery and trusted service.</p>
+            </div>
+
+            <!-- CUSTOMER SERVICE -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-box">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Help & FAQ</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+
+            <!-- CATEGORIES -->
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-box">
+                <h4>Top Categories</h4>
+                <ul>
+                    <li><a href="#">Men Fashion</a></li>
+                    <li><a href="#">Women Fashion</a></li>
+                    <li><a href="#">Kids Collection</a></li>
+                    <li><a href="#">Electronics</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+<div class="col-lg-3 col-md-6 col-sm-6 footer-box">
+    <h4>Contact Us</h4>
+    <ul>
+
+        <li><strong>Head Office:</strong></li>
+        <li>Bjerggade 12, 1 Tv</li>
+        <li>6400, Sønderborg, Denmark</li>
+        <li>📧 founder@asadia.store</li>
+        <li>📞 +45 91 78 39 70</li>
+        <br>
+
+        <li><strong>Site Office:</strong></li>
+        <li>Baku, Azerbaijan</li>
+        <li>📞 +994 50 88 75 834</li>
+        <li>📧 support@asadia.store</li>
+
+    </ul>
+</div>
+ </footer>
+<!--
+<!-- ✅=============== FOOTER END =============== -->
+<!-- FOOTER COPYRIGHT -->
+<div class="footer-bottom">
+    <div class="container text-center">
+        <p class="footer-copy">
+            © 2025 <strong>Asadia Store</strong>. All Rights Reserved.
+        </p>
+
+        <!-- FOOTER PAYMENTS -->
+<div class="footer-payments">
+    <img src="assets/images/payments/visa.png" alt="Visa">
+    <img src="assets/images/payments/mastercard.png" alt="Mastercard">
+    <img src="assets/images/payments/wise.png" alt="Wise">
+    <img src="assets/images/payments/paypal.png" alt="PayPal">
+    <img src="assets/images/payments/easypaisa.png" alt="Easypaisa">
+    <img src="assets/images/payments/jazzcash.png" alt="JazzCash">
+    <img src="assets/images/payments/revolut.png" alt="Revolut">
+    <img src="assets/images/payments/payoneer.png" alt="Payoneer">
+</div>
+    </div>
+ </div>
+<!-- ================= Quickview Modal Start ================= -->
+<div class="modal fade" id="ec_quickview_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+
+            <button type="button" class="btn-close quickview-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body">
+                <div class="row">
+
+                    <!-- Product Image -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="quickview-pro-img">
+                            <img id="qv-img" src="assets/images/product-image/1_1.jpg" alt="product">
+                        </div>
+                    </div>
+
+                    <!-- Product Content -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="quickview-pro-content">
+
+                            <h3 id="qv-title">Product Title Here</h3>
+
+                            <div class="ec-pro-rating">
+                                ★★★★☆
+                            </div>
+
+                            <div class="ec-price">
+                                <span class="old-price" id="qv-old-price">$40.00</span>
+                                <span class="new-price" id="qv-new-price">$30.00</span>
+                            </div>
+
+                            <div class="ec-pro-desc">
+                                <p id="qv-desc">
+                                    Short product description will appear here.
+                                </p>
+                            </div>
+
+                            <div class="ec-pro-option">
+                                <div class="ec-pro-qty">
+                                    <input type="number" class="form-control" value="1">
+                                </div>
+                                <button class="btn btn-primary">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ================= Quickview Modal End ================= -->
+<!-- ================= MOBILE BOTTOM NAV (TEMU STYLE) ================= -->
+<div class="mobile-bottom-nav">
+    <a href="index.html" class="nav-item">
+        <i class="fi fi-rr-home"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="#categories" class="nav-item">
+        <i class="fi fi-rr-apps"></i>
+        <span>Categories</span>
+    </a>
+
+    <a href="cart.html" class="nav-item cart-btn">
+        <i class="fi fi-rr-shopping-cart"></i>
+        <span>Cart</span>
+    </a>
+
+    <a href="wishlist.html" class="nav-item">
+        <i class="fi fi-rr-heart"></i>
+        <span>Wishlist</span>
+    </a>
+
+    <a href="account.html" class="nav-item">
+        <i class="fi fi-rr-user"></i>
+        <span>Account</span>
+    </a>
+</div>
+<!-- ================= END MOBILE BOTTOM NAV ================= -->
+
+
+<!-- ✅ NEWSLETTER POPUP (Always stays at the bottom) -->
+<div id="newsletter-popup" class="d-none">
+    <!-- YOUR NEWSLETTER HTML -->
+</div>
+
+
+<!-- ✅ NEWSLETTER POPUP SCRIPT (Final script before closing body) -->
+<script>
+  setTimeout(()=> {
+    const n = document.getElementById('newsletter-popup');
+    if (n) n.classList.remove('d-none');
+  }, 4000);
+</script>
+
+</body>
+        </html>
